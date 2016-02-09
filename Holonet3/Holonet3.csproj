@@ -20,6 +20,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -169,11 +174,8 @@
     <Content Include="Holodischi\NewLetturaDischi.aspx" />
     <Content Include="Holodischi\SingleHoloFile.ascx" />
     <Content Include="Holonet.htm" />
-    <Content Include="IdentificaOggetti\IdentificaOggetti.aspx" />
     <Content Include="IdentificaOggetti\NewIdentificaOggetti.aspx" />
-    <Content Include="IdentificazioneSostanze\IdentificazioneSostanze.aspx" />
     <Content Include="IdentificazioneSostanze\NewIdentificazioneSostanze.aspx" />
-    <Content Include="IdentificazioneTossine\IdentificazioneTossine.aspx" />
     <Content Include="IdentificazioneTossine\NewIdentificazioneTossine.aspx" />
     <Content Include="Images\Graphics\balls64.gif" />
     <Content Include="Images\Graphics\dots64.gif" />
@@ -184,12 +186,9 @@
     <Content Include="Informatica\Decriptazione.ascx" />
     <Content Include="Informatica\Informatica.aspx" />
     <Content Include="Informatica\Pubblicazione.ascx" />
-    <Content Include="LaboratorioBiochimico\LaboratorioBiochimico.aspx" />
     <Content Include="LaboratorioBiochimico\NewLaboratorioBiochimico.aspx" />
-    <Content Include="LaboratorioChimico\LaboratorioChimico.aspx" />
     <Content Include="Federazione.htm" />
     <Content Include="LaboratorioChimico\NewLaboratorioChimico.aspx" />
-    <Content Include="LaboratorioTecnico\CreazioneOggetti.aspx" />
     <Content Include="LaboratorioTecnico\NewCreazioneOggetti.aspx" />
     <Content Include="Login\EndSession.aspx" />
     <Content Include="Login\LoginFPI.aspx" />
@@ -467,13 +466,6 @@
     <Compile Include="Holodischi\SingleHoloFile.ascx.designer.cs">
       <DependentUpon>SingleHoloFile.ascx</DependentUpon>
     </Compile>
-    <Compile Include="IdentificaOggetti\IdentificaOggetti.aspx.cs">
-      <DependentUpon>IdentificaOggetti.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="IdentificaOggetti\IdentificaOggetti.aspx.designer.cs">
-      <DependentUpon>IdentificaOggetti.aspx</DependentUpon>
-    </Compile>
     <Compile Include="IdentificaOggetti\NewIdentificaOggetti.aspx.cs">
       <DependentUpon>NewIdentificaOggetti.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -481,26 +473,12 @@
     <Compile Include="IdentificaOggetti\NewIdentificaOggetti.aspx.designer.cs">
       <DependentUpon>NewIdentificaOggetti.aspx</DependentUpon>
     </Compile>
-    <Compile Include="IdentificazioneSostanze\IdentificazioneSostanze.aspx.cs">
-      <DependentUpon>IdentificazioneSostanze.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="IdentificazioneSostanze\IdentificazioneSostanze.aspx.designer.cs">
-      <DependentUpon>IdentificazioneSostanze.aspx</DependentUpon>
-    </Compile>
     <Compile Include="IdentificazioneSostanze\NewIdentificazioneSostanze.aspx.cs">
       <DependentUpon>NewIdentificazioneSostanze.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="IdentificazioneSostanze\NewIdentificazioneSostanze.aspx.designer.cs">
       <DependentUpon>NewIdentificazioneSostanze.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="IdentificazioneTossine\IdentificazioneTossine.aspx.cs">
-      <DependentUpon>IdentificazioneTossine.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="IdentificazioneTossine\IdentificazioneTossine.aspx.designer.cs">
-      <DependentUpon>IdentificazioneTossine.aspx</DependentUpon>
     </Compile>
     <Compile Include="IdentificazioneTossine\NewIdentificazioneTossine.aspx.cs">
       <DependentUpon>NewIdentificazioneTossine.aspx</DependentUpon>
@@ -537,13 +515,6 @@
     <Compile Include="Informatica\Pubblicazione.ascx.designer.cs">
       <DependentUpon>Pubblicazione.ascx</DependentUpon>
     </Compile>
-    <Compile Include="LaboratorioBiochimico\LaboratorioBiochimico.aspx.cs">
-      <DependentUpon>LaboratorioBiochimico.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LaboratorioBiochimico\LaboratorioBiochimico.aspx.designer.cs">
-      <DependentUpon>LaboratorioBiochimico.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LaboratorioBiochimico\NewLaboratorioBiochimico.aspx.cs">
       <DependentUpon>NewLaboratorioBiochimico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -551,26 +522,12 @@
     <Compile Include="LaboratorioBiochimico\NewLaboratorioBiochimico.aspx.designer.cs">
       <DependentUpon>NewLaboratorioBiochimico.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LaboratorioChimico\LaboratorioChimico.aspx.cs">
-      <DependentUpon>LaboratorioChimico.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LaboratorioChimico\LaboratorioChimico.aspx.designer.cs">
-      <DependentUpon>LaboratorioChimico.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LaboratorioChimico\NewLaboratorioChimico.aspx.cs">
       <DependentUpon>NewLaboratorioChimico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LaboratorioChimico\NewLaboratorioChimico.aspx.designer.cs">
       <DependentUpon>NewLaboratorioChimico.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LaboratorioTecnico\CreazioneOggetti.aspx.cs">
-      <DependentUpon>CreazioneOggetti.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LaboratorioTecnico\CreazioneOggetti.aspx.designer.cs">
-      <DependentUpon>CreazioneOggetti.aspx</DependentUpon>
     </Compile>
     <Compile Include="LaboratorioTecnico\NewCreazioneOggetti.aspx.cs">
       <DependentUpon>NewCreazioneOggetti.aspx</DependentUpon>

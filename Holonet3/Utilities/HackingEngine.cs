@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using DataAccessLayer;
 using CommonBusiness.Personaggi;
 
@@ -210,10 +208,10 @@ namespace Holonet3.Utilities
 			using (HolonetEntities context = new HolonetEntities())
 			{
 				var ultimoProgressivo = (from trials in context.MissioneHackings
-										 select trials.Progressivo).Max();
+										 select trials.NumeroTentativo).Max();
 
 				MissioneHacking tentativoDaRegistrare = new MissioneHacking();
-				tentativoDaRegistrare.Progressivo = ultimoProgressivo + 1;
+				tentativoDaRegistrare.NumeroTentativo = ultimoProgressivo + 1;
 				tentativoDaRegistrare.NumeroPG = hacker;
 				tentativoDaRegistrare.NumeroMissione = numeroMissione;
 				tentativoDaRegistrare.Riuscito = successo ? 1 : 0;
