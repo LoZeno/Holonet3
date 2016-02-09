@@ -1,0 +1,81 @@
+﻿@model Holonet4.Models.HomeModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+                 @if(Model.notizie.news.Count > 0)
+                 {
+                 <div id="carouselNews" class="carousel slide">
+                <ol class="carousel-indicators">
+                    @for (int i = 0; i < Model.notizie.news.Count; i++)
+                    {
+                        if (i == 0)
+                        {
+                           <li data-target="#carouselNews" data-slide-to="@i" class="active"></li>
+                        }
+                        else
+                        { 
+                            <li data-target="#carouselNews" data-slide-to="@i"></li>    
+                        }
+                    }
+                    
+                </ol>
+                <div class="carousel-inner">
+                    @for (int i = 0; i < Model.notizie.news.Count; i++)
+                    {
+                        if (i == 0)
+                        {
+                            <div class="active item">
+                                <img src="/Content/img/img.jpg" align="center" alt />
+                                <div class="carousel-caption">
+                                    <h4>@Model.notizie.news[i].titolo</h4>
+                                    <p>@Model.notizie.news[i].autore</p><hr />
+                                    <p>@Model.notizie.news[i].testo.Substring(0,50)<br /><br /><a class="btn" href="#ModalNews-@i" role="button" data-toggle="modal">Visualizza News&raquo;</a></p>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="item">
+                                <img src="/Content/img/img.jpg" alt />
+                                <div class="carousel-caption">
+                                    <h4>@Model.notizie.news[i].titolo</h4>
+                                    <p>@Model.notizie.news[i].autore</p><hr />
+                                    <p>@Model.notizie.news[i].testo.Substring(0,150)<br /><br /><a class="btn" href="#ModalNews-@i" role="button" data-toggle="modal">Visualizza News&raquo;</a></p>
+                                </div>
+                            </div>
+                        }
+                    }
+
+                </div>
+                <a class="carousel-control left" href="#carouselNews" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carouselNews" data-slide="next">&rsaquo;</a>
+            </div>
+                    for (int i = 0; i < Model.notizie.news.Count; i++)
+                    {
+            <div id="ModalNews-@i" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="ModalNewsLabel-@i" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                    <h3 id="ModalNewsLabel-@i">@Model.notizie.news[i].titolo - @Model.notizie.news[i].autore</h3>
+                </div>
+                <div class="modal-body">
+                    <font style="font-size:small">
+                    <p>@Model.notizie.news[i].testo</p>
+                    </font>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+            </div>
+                    }
+                 }
+else
+{
+                     
+                 <p>Nessuna news disponibile. Holonet Corporation si scusa per il disagio e frusterà i suoi redattori per fornirvi nuove news fresche fresche</p>
+                 }
+            <!-- Example row of columns -->
+
+

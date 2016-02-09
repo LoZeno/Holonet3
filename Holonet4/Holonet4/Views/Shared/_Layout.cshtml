@@ -1,0 +1,217 @@
+﻿@model Holonet4.Models.HomeModel
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>@ViewBag.Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+                   <link rel="stylesheet" href="~/Content/css/bootstrap-responsive.min.css">
+    
+    @if(Model !=null){
+    if (Model.css != null && Model.css != "")
+    {
+        <link rel="stylesheet" href="~/Content/css/@Model.css">
+    }
+    else
+    { 
+       <link rel="stylesheet" href="~/Content/css/main.css">
+    }
+    }
+
+            <link rel="stylesheet" href="~/Content/css/bootstrap.css">
+
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+
+
+        <script src="~/Content/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    @*<script src="~/Content/js/HTML5Webcam.js"></script>*@
+    @*Ho dovuto commentare questa linea e rimuovere HTML5Webcam.js dal progetto perché QUALCUNO ha dimenticato di committare ANCHE IL FILE CORRISPONDENTE!*@
+    </head>
+<body onload="Init()">
+    
+ <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Holonet</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="@Url.Action("Index")">Home</a></li>
+                            <li><a href="@Url.Action("Credits")">Info</a></li>
+                            
+                            @if (Request.IsAuthenticated)
+                            {
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personale <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Messaggi</a></li>
+                                    <li><a href="#">Rubrica</a></li>
+                                    <li><a href="#">Cartella</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">HoloBanking</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Laboratori <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Chimico</a></li>
+                                    <li><a href="#">Biochimico</a></li>
+                                    <li><a href="#">Tecnico</a></li>
+                                    <li><a href="#">Analisi mediche</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Identificazione <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sostanze</a></li>
+                                    <li><a href="#">Tossine</a></li>
+                                    <li><a href="#">Oggetti</a></li>
+                                    <li><a href="#">HoloDischi</a></li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Logout","Logout","Home")</li>                            
+                            }
+                            else
+                            {
+                        <li><a href="#modalLogin" data-toggle="modal">Login</a></li>
+                            }
+                        </ul>
+                        
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+                        <div id="in" style="overflow:hidden;float:left;"></div>
+                        <div style="float:left;">
+                            <h1>Holonet 4</h1>
+                            <p>The <b>Holo</b>Future</p>
+                        </div>	   
+                        <div style="float:right;"></div>
+    <div class="container">
+                        <div class="hero-unit">
+
+
+                @RenderBody()
+</div>
+                    <footer>
+                <p>&copy; SwLive @DateTime.Now.ToString("yyyy")</p>
+            </footer>
+    </div>
+            <div id="modalLogin" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <h3 id="testModalNewsLabel">Login</h3>
+                </div>
+                <div class="modal-body">
+                    <p>@Html.Partial("_Login")</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+            </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/Content/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="~/Content/js/vendor/bootstrap.min.js"></script>
+
+        <script src="/Content/js/main.js"></script>
+        <script src="~/Content/js/sonic.js"></script>
+        <script>
+
+        var loader = new Sonic({
+            width: 100,
+            height: 100,
+
+            stepsPerFrame: 4,
+            trailLength: 1,
+            pointDistance: .01,
+            fps: 25,
+
+            fillColor: '#FF7B24',
+
+            setup: function () {
+                this._.lineWidth = 10;
+            },
+
+            step: function (point, i, f) {
+
+                var progress = point.progress,
+                  degAngle = 360 * progress,
+                  angle = Math.PI / 180 * degAngle,
+                  angleB = Math.PI / 180 * (degAngle - 180),
+                  size = i * 5;
+
+                this._.fillRect(
+                  Math.cos(angle) * 25 + (50 - size / 2),
+                  Math.sin(angle) * 15 + (50 - size / 2),
+                  size,
+                  size
+                );
+
+                this._.fillStyle = '#63D3FF';
+
+                this._.fillRect(
+                  Math.cos(angleB) * 15 + (50 - size / 2),
+                  Math.sin(angleB) * 25 + (50 - size / 2),
+                  size,
+                  size
+                );
+
+                if (point.progress == 1) {
+
+                    this._.globalAlpha = f < .5 ? 1 - f : f;
+
+                    this._.fillStyle = '#000';
+
+                    this._.beginPath();
+                    this._.arc(50, 50, 5, 0, 360, 0);
+                    this._.closePath();
+                    this._.fill();
+
+                }
+
+
+            },
+
+            path: [
+              ['line', 40, 10, 60, 90]
+            ]
+
+        });
+
+        var container = document.getElementById('in');
+
+        loader.canvas.style.marginTop = (150 - loader.fullHeight) / 2 + 'px';
+        loader.canvas.style.marginLeft = (150 - loader.fullWidth) / 2 + 'px';
+
+        loader.play();
+        
+        container.appendChild(loader.canvas);
+
+
+    </script> 
+
+        <script>
+            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+            (function (d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));
+        </script>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+    </html>

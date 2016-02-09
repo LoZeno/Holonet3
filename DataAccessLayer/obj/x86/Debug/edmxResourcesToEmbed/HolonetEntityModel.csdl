@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HolonetModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="HolonetEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Abilitas" EntityType="HolonetModel.Abilita" />
+    <EntitySet Name="AccountHackings" EntityType="HolonetModel.AccountHacking" />
+    <EntitySet Name="Attitudines" EntityType="HolonetModel.Attitudine" />
+    <EntitySet Name="Bancas" EntityType="HolonetModel.Banca" />
+    <EntitySet Name="CodiciHackings" EntityType="HolonetModel.CodiciHacking" />
+    <EntitySet Name="ContoBancarios" EntityType="HolonetModel.ContoBancario" />
+    <EntitySet Name="EnzimaInfeziones" EntityType="HolonetModel.EnzimaInfezione" />
+    <EntitySet Name="Eventoes" EntityType="HolonetModel.Evento" />
+    <EntitySet Name="Giocatores" EntityType="HolonetModel.Giocatore" />
+    <EntitySet Name="HoloDisks" EntityType="HolonetModel.HoloDisk" />
+    <EntitySet Name="HoloDiskFiles" EntityType="HolonetModel.HoloDiskFile" />
+    <EntitySet Name="HoloDiskHackings" EntityType="HolonetModel.HoloDiskHacking" />
+    <EntitySet Name="Infeziones" EntityType="HolonetModel.Infezione" />
+    <EntitySet Name="Ingredientis" EntityType="HolonetModel.Ingredienti" />
+    <EntitySet Name="Materialis" EntityType="HolonetModel.Materiali" />
+    <EntitySet Name="MessaggioSalvatoes" EntityType="HolonetModel.MessaggioSalvato" />
+    <EntitySet Name="Missiones" EntityType="HolonetModel.Missione" />
+    <EntitySet Name="MissioneHackings" EntityType="HolonetModel.MissioneHacking" />
+    <EntitySet Name="Notizias" EntityType="HolonetModel.Notizia" />
+    <EntitySet Name="NotiziaHackings" EntityType="HolonetModel.NotiziaHacking" />
+    <EntitySet Name="Oggettis" EntityType="HolonetModel.Oggetti" />
+    <EntitySet Name="Personaggios" EntityType="HolonetModel.Personaggio" />
+    <EntitySet Name="Portas" EntityType="HolonetModel.Porta" />
+    <EntitySet Name="PostaInArrivoes" EntityType="HolonetModel.PostaInArrivo" />
+    <EntitySet Name="PostaInUscitas" EntityType="HolonetModel.PostaInUscita" />
+    <EntitySet Name="RequisitiAbilitas" EntityType="HolonetModel.RequisitiAbilita" />
+    <EntitySet Name="Retes" EntityType="HolonetModel.Rete" />
+    <EntitySet Name="Rubricas" EntityType="HolonetModel.Rubrica" />
+    <EntitySet Name="Sostanzes" EntityType="HolonetModel.Sostanze" />
+    <EntitySet Name="Species" EntityType="HolonetModel.Specie" />
+    <AssociationSet Name="FK_ContoBancario_0" Association="HolonetModel.FK_ContoBancario_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="ContoBancario" EntitySet="ContoBancarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoloDiskHacking_0" Association="HolonetModel.FK_HoloDiskHacking_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="HoloDiskHacking" EntitySet="HoloDiskHackings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostaInUscita_1" Association="HolonetModel.FK_PostaInUscita_1">
+      <End Role="Missione" EntitySet="Missiones" />
+      <End Role="PostaInUscita" EntitySet="PostaInUscitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostaInUscita_0" Association="HolonetModel.FK_PostaInUscita_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="PostaInUscita" EntitySet="PostaInUscitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostaInArrivo_1" Association="HolonetModel.FK_PostaInArrivo_1">
+      <End Role="Missione" EntitySet="Missiones" />
+      <End Role="PostaInArrivo" EntitySet="PostaInArrivoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostaInArrivo_0" Association="HolonetModel.FK_PostaInArrivo_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="PostaInArrivo" EntitySet="PostaInArrivoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Missione_2" Association="HolonetModel.FK_Missione_2">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="Missione" EntitySet="Missiones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContoBancario_01" Association="HolonetModel.FK_ContoBancario_01">
+      <End Role="Banca" EntitySet="Bancas" />
+      <End Role="ContoBancario" EntitySet="ContoBancarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ingredienti_0" Association="HolonetModel.FK_Ingredienti_0">
+      <End Role="Sostanze" EntitySet="Sostanzes" />
+      <End Role="Ingredienti" EntitySet="Ingredientis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ingredienti_1" Association="HolonetModel.FK_Ingredienti_1">
+      <End Role="Sostanze" EntitySet="Sostanzes" />
+      <End Role="Ingredienti" EntitySet="Ingredientis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EnzimaInfezione_0" Association="HolonetModel.FK_EnzimaInfezione_0">
+      <End Role="Infezione" EntitySet="Infeziones" />
+      <End Role="EnzimaInfezione" EntitySet="EnzimaInfeziones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rubrica_0" Association="HolonetModel.FK_Rubrica_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="Rubrica" EntitySet="Rubricas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoloDiskFiles_0" Association="HolonetModel.FK_HoloDiskFiles_0">
+      <End Role="HoloDisk" EntitySet="HoloDisks" />
+      <End Role="HoloDiskFile" EntitySet="HoloDiskFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MessaggioSalvato_0" Association="HolonetModel.FK_MessaggioSalvato_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="MessaggioSalvato" EntitySet="MessaggioSalvatoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personaggio_0" Association="HolonetModel.FK_Personaggio_0">
+      <End Role="Giocatore" EntitySet="Giocatores" />
+      <End Role="Personaggio" EntitySet="Personaggios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoloDiskHacking_01" Association="HolonetModel.FK_HoloDiskHacking_01">
+      <End Role="HoloDisk" EntitySet="HoloDisks" />
+      <End Role="HoloDiskHacking" EntitySet="HoloDiskHackings" />
+    </AssociationSet>
+    <EntitySet Name="Parametris" EntityType="HolonetModel.Parametri" />
+    <EntitySet Name="RegistroIPs" EntityType="HolonetModel.RegistroIP" />
+    <EntitySet Name="Costruziones" EntityType="HolonetModel.Costruzione" />
+    <AssociationSet Name="OggettiCostruzione" Association="HolonetModel.OggettiCostruzione">
+      <End Role="Oggetti" EntitySet="Oggettis" />
+      <End Role="Costruzione" EntitySet="Costruziones" />
+    </AssociationSet>
+    <AssociationSet Name="CostruzioneOggetti" Association="HolonetModel.CostruzioneOggetti">
+      <End Role="Costruzione" EntitySet="Costruziones" />
+      <End Role="Oggetti" EntitySet="Oggettis" />
+    </AssociationSet>
+    <EntitySet Name="EventoGiornis" EntityType="HolonetModel.EventoGiorni" />
+    <AssociationSet Name="FK_EventoGiorni_0" Association="HolonetModel.FK_EventoGiorni_0">
+      <End Role="Evento" EntitySet="Eventoes" />
+      <End Role="EventoGiorni" EntitySet="EventoGiornis" />
+    </AssociationSet>
+    <EntitySet Name="EventoGiorniPersonaggios" EntityType="HolonetModel.EventoGiorniPersonaggio" />
+    <AssociationSet Name="FK_EventoGiorniPersonaggio_0" Association="HolonetModel.FK_EventoGiorniPersonaggio_0">
+      <End Role="EventoGiorni" EntitySet="EventoGiornis" />
+      <End Role="EventoGiorniPersonaggio" EntitySet="EventoGiorniPersonaggios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventoGiorniPersonaggio_1" Association="HolonetModel.FK_EventoGiorniPersonaggio_1">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="EventoGiorniPersonaggio" EntitySet="EventoGiorniPersonaggios" />
+    </AssociationSet>
+    <AssociationSet Name="AbilitaAttitudine1" Association="HolonetModel.AbilitaAttitudine1">
+      <End Role="Attitudine" EntitySet="Attitudines" />
+      <End Role="Abilita" EntitySet="Abilitas" />
+    </AssociationSet>
+    <EntitySet Name="AbilitaPersonaggios" EntityType="HolonetModel.AbilitaPersonaggio" />
+    <AssociationSet Name="FK_AbilitaPersonaggio_2" Association="HolonetModel.FK_AbilitaPersonaggio_2">
+      <End Role="Abilita" EntitySet="Abilitas" />
+      <End Role="AbilitaPersonaggio" EntitySet="AbilitaPersonaggios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AbilitaPersonaggio_0" Association="HolonetModel.FK_AbilitaPersonaggio_0">
+      <End Role="Personaggio" EntitySet="Personaggios" />
+      <End Role="AbilitaPersonaggio" EntitySet="AbilitaPersonaggios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AbilitaPersonaggio_1" Association="HolonetModel.FK_AbilitaPersonaggio_1">
+      <End Role="Attitudine" EntitySet="Attitudines" />
+      <End Role="AbilitaPersonaggio" EntitySet="AbilitaPersonaggios" />
+    </AssociationSet>
+    <AssociationSet Name="ListePersonaggio" Association="HolonetModel.ListePersonaggio">
+      <End Role="Attitudine" EntitySet="Attitudines" />
+      <End Role="Personaggio" EntitySet="Personaggios" />
+    </AssociationSet>
+    <EntitySet Name="NewElementis" EntityType="HolonetModel.NewElementi" />
+    <EntitySet Name="CodiciQrs" EntityType="HolonetModel.CodiciQr" />
+    <EntitySet Name="NewElementiDisponibilitas" EntityType="HolonetModel.NewElementiDisponibilita" />
+    <EntitySet Name="NewFormules" EntityType="HolonetModel.NewFormule" />
+    <AssociationSet Name="FK_CodiciQr_0" Association="HolonetModel.FK_CodiciQr_0">
+      <End Role="NewElementi" EntitySet="NewElementis" />
+      <End Role="CodiciQr" EntitySet="CodiciQrs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewElementi_0" Association="HolonetModel.FK_NewElementi_0">
+      <End Role="NewElementiDisponibilita" EntitySet="NewElementiDisponibilitas" />
+      <End Role="NewElementi" EntitySet="NewElementis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewFormule_0" Association="HolonetModel.FK_NewFormule_0">
+      <End Role="NewElementi" EntitySet="NewElementis" />
+      <End Role="NewFormule" EntitySet="NewFormules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewFormule_1" Association="HolonetModel.FK_NewFormule_1">
+      <End Role="NewElementi" EntitySet="NewElementis" />
+      <End Role="NewFormule" EntitySet="NewFormules" />
+    </AssociationSet>
+    <EntitySet Name="TipoSostanzes" EntityType="HolonetModel.TipoSostanze" />
+    <AssociationSet Name="FK_NewSostanze_0" Association="HolonetModel.FK_NewSostanze_0">
+      <End Role="TipoSostanze" EntitySet="TipoSostanzes" />
+      <End Role="NewSostanze" EntitySet="NewElementis" />
+    </AssociationSet>
+    <EntitySet Name="TipoOggettis" EntityType="HolonetModel.TipoOggetti" />
+    <AssociationSet Name="FK_NewOggetti_0" Association="HolonetModel.FK_NewOggetti_0">
+      <End Role="TipoOggetti" EntitySet="TipoOggettis" />
+      <End Role="NewOggetti" EntitySet="NewElementis" />
+    </AssociationSet>
+    <AssociationSet Name="InfezionePersonaggio" Association="HolonetModel.InfezionePersonaggio">
+      <End Role="Infezione" EntitySet="Infeziones" />
+      <End Role="Personaggio" EntitySet="Personaggios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Abilita">
+    <Key>
+      <PropertyRef Name="CdAbilita" />
+    </Key>
+    <Property Name="CdAbilita" Type="Int64" Nullable="false" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Multiacquisto" Type="Int64" Nullable="false" />
+    <Property Name="Costo" Type="Int64" Nullable="false" />
+    <Property Name="BaseAvanzato" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Attitudines" Relationship="HolonetModel.AbilitaAttitudine1" FromRole="Abilita" ToRole="Attitudine" />
+    <NavigationProperty Name="AbilitaPersonaggios" Relationship="HolonetModel.FK_AbilitaPersonaggio_2" FromRole="Abilita" ToRole="AbilitaPersonaggio" />
+  </EntityType>
+  <EntityType Name="AccountHacking">
+    <Key>
+      <PropertyRef Name="NumeroPGAccount" />
+      <PropertyRef Name="NumeroPGHacker" />
+      <PropertyRef Name="NumeroTentativo" />
+    </Key>
+    <Property Name="NumeroPGAccount" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPGHacker" Type="Int64" Nullable="false" />
+    <Property Name="NumeroTentativo" Type="Int64" Nullable="false" />
+    <Property Name="Riuscito" Type="Int64" />
+    <Property Name="DataTentativo" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Attitudine">
+    <Key>
+      <PropertyRef Name="CdAttitudine" />
+    </Key>
+    <Property Name="CdAttitudine" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Abilitas" Relationship="HolonetModel.AbilitaAttitudine1" FromRole="Attitudine" ToRole="Abilita" />
+    <NavigationProperty Name="AbilitaPersonaggios" Relationship="HolonetModel.FK_AbilitaPersonaggio_1" FromRole="Attitudine" ToRole="AbilitaPersonaggio" />
+    <NavigationProperty Name="Personaggios" Relationship="HolonetModel.ListePersonaggio" FromRole="Attitudine" ToRole="Personaggio" />
+  </EntityType>
+  <EntityType Name="Banca">
+    <Key>
+      <PropertyRef Name="NumeroBanca" />
+    </Key>
+    <Property Name="NumeroBanca" Type="Int64" Nullable="false" />
+    <Property Name="NomeBanca" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="Tasso" Type="Int64" />
+    <Property Name="PeriodoTasso" Type="Int64" />
+    <Property Name="Costo" Type="Int64" />
+    <Property Name="PeriodoCosto" Type="Int64" />
+    <NavigationProperty Name="ContoBancarios" Relationship="HolonetModel.FK_ContoBancario_01" FromRole="Banca" ToRole="ContoBancario" />
+  </EntityType>
+  <EntityType Name="CodiciHacking">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="Codice" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Livello" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContoBancario">
+    <Key>
+      <PropertyRef Name="NumeroConto" />
+    </Key>
+    <Property Name="NumeroConto" Type="Int64" Nullable="false" />
+    <Property Name="NumeroBanca" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="PeriodoTasso" Type="Int64" />
+    <Property Name="Costo" Type="Int64" />
+    <Property Name="PeriodoCosto" Type="Int64" />
+    <Property Name="Tasso" Type="Int64" />
+    <Property Name="DataSottoscrizione" Type="DateTime" />
+    <Property Name="Totale" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_ContoBancario_0" FromRole="ContoBancario" ToRole="Personaggio" />
+    <NavigationProperty Name="Banca" Relationship="HolonetModel.FK_ContoBancario_01" FromRole="ContoBancario" ToRole="Banca" />
+  </EntityType>
+  <EntityType Name="EnzimaInfezione">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="Enzima" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Infezione" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Infezione1" Relationship="HolonetModel.FK_EnzimaInfezione_0" FromRole="EnzimaInfezione" ToRole="Infezione" />
+  </EntityType>
+  <EntityType Name="Evento">
+    <Key>
+      <PropertyRef Name="CdEvento" />
+    </Key>
+    <Property Name="CdEvento" Type="Int64" Nullable="false" />
+    <Property Name="TitoloEvento" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DataEvento" Type="DateTime" Nullable="false" />
+    <Property Name="PuntiAssegnati" Type="Int64" Nullable="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Costo" Type="Double" Nullable="false" />
+    <NavigationProperty Name="EventoGiornis" Relationship="HolonetModel.FK_EventoGiorni_0" FromRole="Evento" ToRole="EventoGiorni" />
+  </EntityType>
+  <EntityType Name="Giocatore">
+    <Key>
+      <PropertyRef Name="NumeroSW" />
+    </Key>
+    <Property Name="NumeroSW" Type="Int64" Nullable="false" />
+    <Property Name="Cognome" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DataNascita" Type="DateTime" Nullable="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Citta" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Provincia" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CAP" Type="String" MaxLength="6" Unicode="true" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="DataIscrizione" Type="DateTime" Nullable="false" />
+    <Property Name="Sesso" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="TipoGiocatore" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Personaggios" Relationship="HolonetModel.FK_Personaggio_0" FromRole="Giocatore" ToRole="Personaggio" />
+  </EntityType>
+  <EntityType Name="HoloDisk">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codice" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Contenuto" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Hacking" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="HoloDiskFiles" Relationship="HolonetModel.FK_HoloDiskFiles_0" FromRole="HoloDisk" ToRole="HoloDiskFile" />
+    <NavigationProperty Name="HoloDiskHackings" Relationship="HolonetModel.FK_HoloDiskHacking_01" FromRole="HoloDisk" ToRole="HoloDiskHacking" />
+    <Property Type="Guid" Name="CodiceQr" />
+  </EntityType>
+  <EntityType Name="HoloDiskFile">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+      <PropertyRef Name="NumeroFile" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="NumeroFile" Type="Int64" Nullable="false" />
+    <Property Name="NomeFile" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Contenuto" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="LivelloCrypt" Type="Int64" />
+    <NavigationProperty Name="HoloDisk" Relationship="HolonetModel.FK_HoloDiskFiles_0" FromRole="HoloDiskFile" ToRole="HoloDisk" />
+  </EntityType>
+  <EntityType Name="HoloDiskHacking">
+    <Key>
+      <PropertyRef Name="ProgressivoDisco" />
+      <PropertyRef Name="NumeroPGHacker" />
+      <PropertyRef Name="NumeroTentativo" />
+    </Key>
+    <Property Name="ProgressivoDisco" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPGHacker" Type="Int64" Nullable="false" />
+    <Property Name="NumeroTentativo" Type="Int64" Nullable="false" />
+    <Property Name="Riuscito" Type="Int64" />
+    <Property Name="DataTentativo" Type="DateTime" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_HoloDiskHacking_0" FromRole="HoloDiskHacking" ToRole="Personaggio" />
+    <NavigationProperty Name="HoloDisk" Relationship="HolonetModel.FK_HoloDiskHacking_01" FromRole="HoloDiskHacking" ToRole="HoloDisk" />
+  </EntityType>
+  <EntityType Name="Infezione">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="EnzimaInfeziones" Relationship="HolonetModel.FK_EnzimaInfezione_0" FromRole="Infezione" ToRole="EnzimaInfezione" />
+    <NavigationProperty Name="Personaggios" Relationship="HolonetModel.InfezionePersonaggio" FromRole="Infezione" ToRole="Personaggio" />
+  </EntityType>
+  <EntityType Name="Ingredienti">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="ProgressivoSostanza" Type="Int64" Nullable="false" />
+    <Property Name="ProgressivoIngrediente" Type="Int64" />
+    <NavigationProperty Name="Sostanze" Relationship="HolonetModel.FK_Ingredienti_0" FromRole="Ingredienti" ToRole="Sostanze" />
+    <NavigationProperty Name="Sostanze1" Relationship="HolonetModel.FK_Ingredienti_1" FromRole="Ingredienti" ToRole="Sostanze" />
+  </EntityType>
+  <EntityType Name="Materiali">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Costo" Type="Double" />
+    <Property Name="Disponibilita" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Tipo" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MessaggioSalvato">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Titolo" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Provenienza" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Contenuto" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Hacking" Type="Int64" Nullable="false" />
+    <Property Type="Int64" Name="NumeroPG" Nullable="false" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_MessaggioSalvato_0" FromRole="MessaggioSalvato" ToRole="Personaggio" />
+  </EntityType>
+  <EntityType Name="Missione">
+    <Key>
+      <PropertyRef Name="NumeroMissione" />
+    </Key>
+    <Property Name="NumeroMissione" Type="Int64" Nullable="false" />
+    <Property Name="Mandante" Type="Int64" Nullable="false" />
+    <Property Name="Titolo" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="Testo" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="LivelloHacking" Type="Int64" Nullable="false" />
+    <Property Name="Attiva" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="PostaInUscitas" Relationship="HolonetModel.FK_PostaInUscita_1" FromRole="Missione" ToRole="PostaInUscita" />
+    <NavigationProperty Name="PostaInArrivoes" Relationship="HolonetModel.FK_PostaInArrivo_1" FromRole="Missione" ToRole="PostaInArrivo" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_Missione_2" FromRole="Missione" ToRole="Personaggio" />
+    <Property Type="DateTime" Name="DataCreazione" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MissioneHacking">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="NumeroMissione" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="Riuscito" Type="Int64" Nullable="false" />
+    <Property Name="DataTentativo" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Notizia">
+    <Key>
+      <PropertyRef Name="NumeroNotizia" />
+    </Key>
+    <Property Name="NumeroNotizia" Type="Int64" Nullable="false" />
+    <Property Name="DataCreazione" Type="DateTime" Nullable="false" />
+    <Property Name="DataFine" Type="DateTime" Nullable="false" />
+    <Property Name="Titolo" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="Testo" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Rete" Type="Int64" Nullable="false" />
+    <Property Name="Autore" Type="Int64" />
+    <Property Name="LivelloHacking" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NotiziaHacking">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="NumeroNotizia" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="Riuscito" Type="Int64" Nullable="false" />
+    <Property Name="DataTentativo" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Oggetti">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+      <PropertyRef Name="CodiceOggetto" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="CodiceOggetto" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Cariche" Type="Int64" />
+    <Property Name="DataScadenza" Type="DateTime" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Nome" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Immagine" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Costo" Type="Double" />
+    <NavigationProperty Name="Costruziones" Relationship="HolonetModel.OggettiCostruzione" FromRole="Oggetti" ToRole="Costruzione" />
+    <NavigationProperty Name="Costruziones_1" Relationship="HolonetModel.CostruzioneOggetti" FromRole="Oggetti" ToRole="Costruzione" />
+  </EntityType>
+  <EntityType Name="Personaggio">
+    <Key>
+      <PropertyRef Name="NumeroPG" />
+    </Key>
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="NumeroSW" Type="Int64" Nullable="false" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Specie" Type="Int64" Nullable="false" />
+    <Property Name="Tipo" Type="Int64" Nullable="false" />
+    <Property Name="Punti" Type="Int64" Nullable="false" />
+    <Property Name="Sesso" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="LatoOscuro" Type="Int64" Nullable="false" />
+    <Property Name="DataCreazione" Type="DateTime" Nullable="false" />
+    <Property Name="Titolo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Vivo" Type="Int64" Nullable="false" />
+    <Property Name="DataMorte" Type="DateTime" />
+    <Property Name="PasswordHolonet" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Hacker" Type="Int64" />
+    <Property Name="Enzima" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Fazione" Type="Int64" />
+    <NavigationProperty Name="ContiBancari" Relationship="HolonetModel.FK_ContoBancario_0" FromRole="Personaggio" ToRole="ContoBancario" />
+    <NavigationProperty Name="HoloDiskHackings" Relationship="HolonetModel.FK_HoloDiskHacking_0" FromRole="Personaggio" ToRole="HoloDiskHacking" />
+    <NavigationProperty Name="PostaInviata" Relationship="HolonetModel.FK_PostaInUscita_0" FromRole="Personaggio" ToRole="PostaInUscita" />
+    <NavigationProperty Name="PostaRicevuta" Relationship="HolonetModel.FK_PostaInArrivo_0" FromRole="Personaggio" ToRole="PostaInArrivo" />
+    <NavigationProperty Name="MissioniCreate" Relationship="HolonetModel.FK_Missione_2" FromRole="Personaggio" ToRole="Missione" />
+    <NavigationProperty Name="Rubricas" Relationship="HolonetModel.FK_Rubrica_0" FromRole="Personaggio" ToRole="Rubrica" />
+    <NavigationProperty Name="MessaggioSalvatoes" Relationship="HolonetModel.FK_MessaggioSalvato_0" FromRole="Personaggio" ToRole="MessaggioSalvato" />
+    <NavigationProperty Name="Giocatore" Relationship="HolonetModel.FK_Personaggio_0" FromRole="Personaggio" ToRole="Giocatore" />
+    <Property Type="DateTime" Name="UltimaCrittazione" />
+    <Property Type="Int64" Name="LivelloCrittazione" Nullable="false" />
+    <Property Type="Guid" Name="CodicePg" />
+    <NavigationProperty Name="EventoGiorniPersonaggios" Relationship="HolonetModel.FK_EventoGiorniPersonaggio_1" FromRole="Personaggio" ToRole="EventoGiorniPersonaggio" />
+    <NavigationProperty Name="AbilitaPersonaggios" Relationship="HolonetModel.FK_AbilitaPersonaggio_0" FromRole="Personaggio" ToRole="AbilitaPersonaggio" />
+    <NavigationProperty Name="Attitudines" Relationship="HolonetModel.ListePersonaggio" FromRole="Personaggio" ToRole="Attitudine" />
+    <NavigationProperty Name="Infeziones" Relationship="HolonetModel.InfezionePersonaggio" FromRole="Personaggio" ToRole="Infezione" />
+  </EntityType>
+  <EntityType Name="Porta">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="CodicePorta" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="LivelloHacking" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PostaInArrivo">
+    <Key>
+      <PropertyRef Name="NumeroMissione" />
+      <PropertyRef Name="NumeroPG" />
+    </Key>
+    <Property Name="NumeroMissione" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="Cancellata" Type="Boolean" />
+    <Property Name="Letta" Type="Boolean" />
+    <NavigationProperty Name="Missione" Relationship="HolonetModel.FK_PostaInArrivo_1" FromRole="PostaInArrivo" ToRole="Missione" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_PostaInArrivo_0" FromRole="PostaInArrivo" ToRole="Personaggio" />
+    <Property Type="DateTime" Name="DataCancellazione" />
+  </EntityType>
+  <EntityType Name="PostaInUscita">
+    <Key>
+      <PropertyRef Name="NumeroMissione" />
+      <PropertyRef Name="NumeroPG" />
+    </Key>
+    <Property Name="NumeroMissione" Type="Int64" Nullable="false" />
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="Cancellata" Type="Boolean" />
+    <Property Name="Letta" Type="Boolean" />
+    <NavigationProperty Name="Missione" Relationship="HolonetModel.FK_PostaInUscita_1" FromRole="PostaInUscita" ToRole="Missione" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_PostaInUscita_0" FromRole="PostaInUscita" ToRole="Personaggio" />
+    <Property Type="DateTime" Name="DataCancellazione" />
+  </EntityType>
+  <EntityType Name="RequisitiAbilita">
+    <Key>
+      <PropertyRef Name="CdAbilita" />
+      <PropertyRef Name="CdRequisito" />
+    </Key>
+    <Property Name="CdAbilita" Type="Int64" Nullable="false" />
+    <Property Name="CdRequisito" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rete">
+    <Key>
+      <PropertyRef Name="NumeroRete" />
+    </Key>
+    <Property Name="NumeroRete" Type="Int64" Nullable="false" />
+    <Property Name="NomeRete" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="Fazione" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Rubrica">
+    <Key>
+      <PropertyRef Name="NumeroPG" />
+      <PropertyRef Name="NumeroSalvato" />
+    </Key>
+    <Property Name="NumeroPG" Type="Int64" Nullable="false" />
+    <Property Name="NumeroSalvato" Type="Int64" Nullable="false" />
+    <Property Name="NomeVisualizzato" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_Rubrica_0" FromRole="Rubrica" ToRole="Personaggio" />
+  </EntityType>
+  <EntityType Name="Sostanze">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Name="Progressivo" Type="Int64" Nullable="false" />
+    <Property Name="ModoUso" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ValoreEfficacia" Type="Int64" Nullable="false" />
+    <Property Name="Effetto" Type="String" Nullable="false" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+    <Property Name="CodiceSostanza" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Tipo" Type="Int64" />
+    <Property Name="Nome" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Disponibilita" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Costo" Type="Double" />
+    <NavigationProperty Name="Ingredientis" Relationship="HolonetModel.FK_Ingredienti_0" FromRole="Sostanze" ToRole="Ingredienti" />
+    <NavigationProperty Name="Ingredientis1" Relationship="HolonetModel.FK_Ingredienti_1" FromRole="Sostanze" ToRole="Ingredienti" />
+  </EntityType>
+  <EntityType Name="Specie">
+    <Key>
+      <PropertyRef Name="Specie1" />
+    </Key>
+    <Property Name="Specie1" Type="Int64" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="2147483647" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_ContoBancario_0">
+    <End Role="Personaggio" Type="HolonetModel.Personaggio" Multiplicity="1" />
+    <End Role="ContoBancario" Type="HolonetModel.ContoBancario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="ContoBancario">
+        <PropertyRef Name="NumeroPG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoloDiskHacking_0">
+    <End Role="Personaggio" Type="HolonetModel.Personaggio" Multiplicity="1" />
+    <End Role="HoloDiskHacking" Type="HolonetModel.HoloDiskHacking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="HoloDiskHacking">
+        <PropertyRef Name="NumeroPGHacker" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostaInUscita_1">
+    <End Type="HolonetModel.Missione" Role="Missione" Multiplicity="1" />
+    <End Type="HolonetModel.PostaInUscita" Role="PostaInUscita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Missione">
+        <PropertyRef Name="NumeroMissione" />
+      </Principal>
+      <Dependent Role="PostaInUscita">
+        <PropertyRef Name="NumeroMissione" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostaInUscita_0">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.PostaInUscita" Role="PostaInUscita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="PostaInUscita">
+        <PropertyRef Name="NumeroPG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostaInArrivo_1">
+    <End Type="HolonetModel.Missione" Role="Missione" Multiplicity="1" />
+    <End Type="HolonetModel.PostaInArrivo" Role="PostaInArrivo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Missione">
+        <PropertyRef Name="NumeroMissione" />
+      </Principal>
+      <Dependent Role="PostaInArrivo">
+        <PropertyRef Name="NumeroMissione" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostaInArrivo_0">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.PostaInArrivo" Role="PostaInArrivo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="PostaInArrivo">
+        <PropertyRef Name="NumeroPG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Missione_2">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.Missione" Role="Missione" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="Missione">
+        <PropertyRef Name="Mandante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContoBancario_01">
+    <End Type="HolonetModel.Banca" Role="Banca" Multiplicity="1" />
+    <End Type="HolonetModel.ContoBancario" Role="ContoBancario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banca">
+        <PropertyRef Name="NumeroBanca" />
+      </Principal>
+      <Dependent Role="ContoBancario">
+        <PropertyRef Name="NumeroBanca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ingredienti_0">
+    <End Type="HolonetModel.Sostanze" Role="Sostanze" Multiplicity="0..1" />
+    <End Type="HolonetModel.Ingredienti" Role="Ingredienti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sostanze">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="Ingredienti">
+        <PropertyRef Name="ProgressivoIngrediente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ingredienti_1">
+    <End Type="HolonetModel.Sostanze" Role="Sostanze" Multiplicity="1" />
+    <End Type="HolonetModel.Ingredienti" Role="Ingredienti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sostanze">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="Ingredienti">
+        <PropertyRef Name="ProgressivoSostanza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EnzimaInfezione_0">
+    <End Type="HolonetModel.Infezione" Role="Infezione" Multiplicity="1" />
+    <End Type="HolonetModel.EnzimaInfezione" Role="EnzimaInfezione" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Infezione">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="EnzimaInfezione">
+        <PropertyRef Name="Infezione" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rubrica_0">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.Rubrica" Role="Rubrica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="Rubrica">
+        <PropertyRef Name="NumeroPG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoloDiskFiles_0">
+    <End Type="HolonetModel.HoloDisk" Role="HoloDisk" Multiplicity="1" />
+    <End Type="HolonetModel.HoloDiskFile" Role="HoloDiskFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoloDisk">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="HoloDiskFile">
+        <PropertyRef Name="Progressivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MessaggioSalvato_0">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.MessaggioSalvato" Role="MessaggioSalvato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="MessaggioSalvato">
+        <PropertyRef Name="NumeroPG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personaggio_0">
+    <End Type="HolonetModel.Giocatore" Role="Giocatore" Multiplicity="1" />
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Giocatore">
+        <PropertyRef Name="NumeroSW" />
+      </Principal>
+      <Dependent Role="Personaggio">
+        <PropertyRef Name="NumeroSW" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoloDiskHacking_01">
+    <End Type="HolonetModel.HoloDisk" Role="HoloDisk" Multiplicity="1" />
+    <End Type="HolonetModel.HoloDiskHacking" Role="HoloDiskHacking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoloDisk">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="HoloDiskHacking">
+        <PropertyRef Name="ProgressivoDisco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Parametri">
+    <Key>
+      <PropertyRef Name="Rete" />
+      <PropertyRef Name="Parametro" />
+    </Key>
+    <Property Type="Int64" Name="Rete" Nullable="false" />
+    <Property Type="String" Name="Parametro" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Valore" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RegistroIP">
+    <Key>
+      <PropertyRef Name="IndirizzoIP" />
+    </Key>
+    <Property Type="String" Name="IndirizzoIP" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Rete" />
+  </EntityType>
+  <EntityType Name="Costruzione">
+    <Key>
+      <PropertyRef Name="ProgressivoOggetto" />
+      <PropertyRef Name="CodiceOggetto" />
+      <PropertyRef Name="ProgressivoMateriale" />
+      <PropertyRef Name="CodiceMateriale" />
+    </Key>
+    <Property Type="Int64" Name="ProgressivoOggetto" Nullable="false" />
+    <Property Type="String" Name="CodiceOggetto" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ProgressivoMateriale" Nullable="false" />
+    <Property Type="String" Name="CodiceMateriale" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Oggetti" Relationship="HolonetModel.OggettiCostruzione" FromRole="Costruzione" ToRole="Oggetti" />
+    <NavigationProperty Name="Oggetti_1" Relationship="HolonetModel.CostruzioneOggetti" FromRole="Costruzione" ToRole="Oggetti" />
+  </EntityType>
+  <Association Name="OggettiCostruzione">
+    <End Type="HolonetModel.Oggetti" Role="Oggetti" Multiplicity="1" />
+    <End Type="HolonetModel.Costruzione" Role="Costruzione" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oggetti">
+        <PropertyRef Name="Progressivo" />
+        <PropertyRef Name="CodiceOggetto" />
+      </Principal>
+      <Dependent Role="Costruzione">
+        <PropertyRef Name="ProgressivoOggetto" />
+        <PropertyRef Name="CodiceOggetto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CostruzioneOggetti">
+    <End Type="HolonetModel.Costruzione" Role="Costruzione" Multiplicity="*" />
+    <End Type="HolonetModel.Oggetti" Role="Oggetti" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Oggetti">
+        <PropertyRef Name="Progressivo" />
+        <PropertyRef Name="CodiceOggetto" />
+      </Principal>
+      <Dependent Role="Costruzione">
+        <PropertyRef Name="ProgressivoMateriale" />
+        <PropertyRef Name="CodiceMateriale" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EventoGiorni">
+    <Key>
+      <PropertyRef Name="CdEvento" />
+      <PropertyRef Name="DataGiorno" />
+    </Key>
+    <Property Type="Int64" Name="CdEvento" Nullable="false" />
+    <Property Type="DateTime" Name="DataGiorno" Nullable="false" />
+    <Property Type="Int64" Name="PuntiAssegnati" />
+    <NavigationProperty Name="Evento" Relationship="HolonetModel.FK_EventoGiorni_0" FromRole="EventoGiorni" ToRole="Evento" />
+    <Property Type="DateTime" Name="OraInGioco" Nullable="false" />
+    <Property Type="DateTime" Name="OraFuoriGioco" Nullable="false" />
+    <NavigationProperty Name="EventoGiorniPersonaggios" Relationship="HolonetModel.FK_EventoGiorniPersonaggio_0" FromRole="EventoGiorni" ToRole="EventoGiorniPersonaggio" />
+    <Property Type="Single" Name="CostoGiorno" />
+  </EntityType>
+  <Association Name="FK_EventoGiorni_0">
+    <End Type="HolonetModel.Evento" Role="Evento" Multiplicity="1" />
+    <End Type="HolonetModel.EventoGiorni" Role="EventoGiorni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evento">
+        <PropertyRef Name="CdEvento" />
+      </Principal>
+      <Dependent Role="EventoGiorni">
+        <PropertyRef Name="CdEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EventoGiorniPersonaggio">
+    <Key>
+      <PropertyRef Name="CdEvento" />
+      <PropertyRef Name="DataGiorno" />
+      <PropertyRef Name="NumeroPg" />
+    </Key>
+    <Property Type="Int64" Name="CdEvento" Nullable="false" />
+    <Property Type="DateTime" Name="DataGiorno" Nullable="false" />
+    <Property Type="Int64" Name="NumeroPg" Nullable="false" />
+    <Property Type="Boolean" Name="Pagato" Nullable="false" />
+    <Property Type="DateTime" Name="DataPagamento" />
+    <Property Type="Boolean" Name="Partecipato" Nullable="false" />
+    <NavigationProperty Name="EventoGiorni" Relationship="HolonetModel.FK_EventoGiorniPersonaggio_0" FromRole="EventoGiorniPersonaggio" ToRole="EventoGiorni" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_EventoGiorniPersonaggio_1" FromRole="EventoGiorniPersonaggio" ToRole="Personaggio" />
+  </EntityType>
+  <Association Name="FK_EventoGiorniPersonaggio_0">
+    <End Type="HolonetModel.EventoGiorni" Role="EventoGiorni" Multiplicity="1" />
+    <End Type="HolonetModel.EventoGiorniPersonaggio" Role="EventoGiorniPersonaggio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EventoGiorni">
+        <PropertyRef Name="CdEvento" />
+        <PropertyRef Name="DataGiorno" />
+      </Principal>
+      <Dependent Role="EventoGiorniPersonaggio">
+        <PropertyRef Name="CdEvento" />
+        <PropertyRef Name="DataGiorno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventoGiorniPersonaggio_1">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.EventoGiorniPersonaggio" Role="EventoGiorniPersonaggio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="EventoGiorniPersonaggio">
+        <PropertyRef Name="NumeroPg" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AbilitaAttitudine1">
+    <End Type="HolonetModel.Attitudine" Role="Attitudine" Multiplicity="*" />
+    <End Type="HolonetModel.Abilita" Role="Abilita" Multiplicity="*" />
+  </Association>
+  <EntityType Name="AbilitaPersonaggio">
+    <Key>
+      <PropertyRef Name="NumeroPG" />
+      <PropertyRef Name="CdAbilita" />
+    </Key>
+    <Property Type="Int64" Name="NumeroPG" Nullable="false" />
+    <Property Type="Int64" Name="CdAbilita" Nullable="false" />
+    <Property Type="Int64" Name="NumeroAcquisti" />
+    <Property Type="String" Name="CdAttitudine" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Abilita" Relationship="HolonetModel.FK_AbilitaPersonaggio_2" FromRole="AbilitaPersonaggio" ToRole="Abilita" />
+    <NavigationProperty Name="Personaggio" Relationship="HolonetModel.FK_AbilitaPersonaggio_0" FromRole="AbilitaPersonaggio" ToRole="Personaggio" />
+    <NavigationProperty Name="Attitudine" Relationship="HolonetModel.FK_AbilitaPersonaggio_1" FromRole="AbilitaPersonaggio" ToRole="Attitudine" />
+  </EntityType>
+  <Association Name="FK_AbilitaPersonaggio_2">
+    <End Type="HolonetModel.Abilita" Role="Abilita" Multiplicity="1" />
+    <End Type="HolonetModel.AbilitaPersonaggio" Role="AbilitaPersonaggio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abilita">
+        <PropertyRef Name="CdAbilita" />
+      </Principal>
+      <Dependent Role="AbilitaPersonaggio">
+        <PropertyRef Name="CdAbilita" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AbilitaPersonaggio_0">
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="1" />
+    <End Type="HolonetModel.AbilitaPersonaggio" Role="AbilitaPersonaggio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Principal>
+      <Dependent Role="AbilitaPersonaggio">
+        <PropertyRef Name="NumeroPG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AbilitaPersonaggio_1">
+    <End Type="HolonetModel.Attitudine" Role="Attitudine" Multiplicity="1" />
+    <End Type="HolonetModel.AbilitaPersonaggio" Role="AbilitaPersonaggio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attitudine">
+        <PropertyRef Name="CdAttitudine" />
+      </Principal>
+      <Dependent Role="AbilitaPersonaggio">
+        <PropertyRef Name="CdAttitudine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ListePersonaggio">
+    <End Type="HolonetModel.Attitudine" Role="Attitudine" Multiplicity="*" />
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="*" />
+  </Association>
+  <EntityType Name="NewElementi">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Type="Int64" Name="Progressivo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nome" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Descrizione" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Effetto" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Single" Name="Costo" Nullable="false" />
+    <Property Type="String" Name="Immagine" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Disponibilita" Nullable="false" />
+    <Property Type="DateTime" Name="DataScadenza" />
+    <Property Type="Int64" Name="Discriminator" Nullable="false" />
+    <NavigationProperty Name="CodiciQrs" Relationship="HolonetModel.FK_CodiciQr_0" FromRole="NewElementi" ToRole="CodiciQr" />
+    <NavigationProperty Name="NewElementiDisponibilita" Relationship="HolonetModel.FK_NewElementi_0" FromRole="NewElementi" ToRole="NewElementiDisponibilita" />
+    <NavigationProperty Name="NewFormules" Relationship="HolonetModel.FK_NewFormule_0" FromRole="NewElementi" ToRole="NewFormule" />
+    <NavigationProperty Name="Componenti" Relationship="HolonetModel.FK_NewFormule_1" FromRole="NewElementi" ToRole="NewFormule" />
+  </EntityType>
+  <EntityType Name="NewOggetti" BaseType="HolonetModel.NewElementi">
+    <Property Type="Int64" Name="NumeroCariche" />
+    <Property Type="Int64" Name="Tipo" />
+    <NavigationProperty Name="TipoOggetti" Relationship="HolonetModel.FK_NewOggetti_0" FromRole="NewOggetti" ToRole="TipoOggetti" />
+  </EntityType>
+  <EntityType Name="NewSostanze" BaseType="HolonetModel.NewElementi">
+    <Property Type="String" Name="ModoUso" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ValoreEfficacia" Nullable="false" />
+    <Property Type="Int64" Name="Tipo" Nullable="false" />
+    <NavigationProperty Name="TipoSostanze" Relationship="HolonetModel.FK_NewSostanze_0" FromRole="NewSostanze" ToRole="TipoSostanze" />
+  </EntityType>
+  <EntityType Name="CodiciQr">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+      <PropertyRef Name="Codice" />
+    </Key>
+    <Property Type="Int64" Name="Progressivo" Nullable="false" />
+    <Property Type="Guid" Name="Codice" Nullable="false" />
+    <NavigationProperty Name="NewElementi" Relationship="HolonetModel.FK_CodiciQr_0" FromRole="CodiciQr" ToRole="NewElementi" />
+  </EntityType>
+  <EntityType Name="NewElementiDisponibilita">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Type="Int64" Name="Progressivo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Descrizione" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NewElementis" Relationship="HolonetModel.FK_NewElementi_0" FromRole="NewElementiDisponibilita" ToRole="NewElementi" />
+  </EntityType>
+  <EntityType Name="NewFormule">
+    <Key>
+      <PropertyRef Name="Risultato" />
+      <PropertyRef Name="NumeroIngrediente" />
+    </Key>
+    <Property Type="Int64" Name="Risultato" Nullable="false" />
+    <Property Type="Int64" Name="NumeroIngrediente" Nullable="false" />
+    <Property Type="Int64" Name="Ingrediente" />
+    <NavigationProperty Name="NewElementi" Relationship="HolonetModel.FK_NewFormule_0" FromRole="NewFormule" ToRole="NewElementi" />
+    <NavigationProperty Name="NewElementi1" Relationship="HolonetModel.FK_NewFormule_1" FromRole="NewFormule" ToRole="NewElementi" />
+  </EntityType>
+  <Association Name="FK_CodiciQr_0">
+    <End Type="HolonetModel.NewElementi" Role="NewElementi" Multiplicity="1" />
+    <End Type="HolonetModel.CodiciQr" Role="CodiciQr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewElementi">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="CodiciQr">
+        <PropertyRef Name="Progressivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewElementi_0">
+    <End Type="HolonetModel.NewElementiDisponibilita" Role="NewElementiDisponibilita" Multiplicity="1" />
+    <End Type="HolonetModel.NewElementi" Role="NewElementi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewElementiDisponibilita">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="NewElementi">
+        <PropertyRef Name="Disponibilita" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewFormule_0">
+    <End Type="HolonetModel.NewElementi" Role="NewElementi" Multiplicity="0..1" />
+    <End Type="HolonetModel.NewFormule" Role="NewFormule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewElementi">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="NewFormule">
+        <PropertyRef Name="Ingrediente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewFormule_1">
+    <End Type="HolonetModel.NewElementi" Role="NewElementi" Multiplicity="1" />
+    <End Type="HolonetModel.NewFormule" Role="NewFormule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewElementi">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="NewFormule">
+        <PropertyRef Name="Risultato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TipoSostanze">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Type="Int64" Name="Progressivo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Descrizione" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NewSostanzes" Relationship="HolonetModel.FK_NewSostanze_0" FromRole="TipoSostanze" ToRole="NewSostanze" />
+  </EntityType>
+  <Association Name="FK_NewSostanze_0">
+    <End Type="HolonetModel.TipoSostanze" Role="TipoSostanze" Multiplicity="1" />
+    <End Type="HolonetModel.NewSostanze" Role="NewSostanze" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoSostanze">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="NewSostanze">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TipoOggetti">
+    <Key>
+      <PropertyRef Name="Progressivo" />
+    </Key>
+    <Property Type="Int64" Name="Progressivo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Descrizione" MaxLength="60" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NewOggettis" Relationship="HolonetModel.FK_NewOggetti_0" FromRole="TipoOggetti" ToRole="NewOggetti" />
+  </EntityType>
+  <Association Name="FK_NewOggetti_0">
+    <End Type="HolonetModel.TipoOggetti" Role="TipoOggetti" Multiplicity="0..1" />
+    <End Type="HolonetModel.NewOggetti" Role="NewOggetti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoOggetti">
+        <PropertyRef Name="Progressivo" />
+      </Principal>
+      <Dependent Role="NewOggetti">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="InfezionePersonaggio">
+    <End Type="HolonetModel.Infezione" Role="Infezione" Multiplicity="*" />
+    <End Type="HolonetModel.Personaggio" Role="Personaggio" Multiplicity="*" />
+  </Association>
+</Schema>

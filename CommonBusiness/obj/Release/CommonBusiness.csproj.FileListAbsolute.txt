@@ -1,0 +1,11 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\x64\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\x86\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\CommonBusiness.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\CommonBusiness.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\DataAccessLayer.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\System.Data.SQLite.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\System.Data.SQLite.Linq.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\bin\Release\DataAccessLayer.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\obj\Release\CommonBusiness.csprojResolveAssemblyReference.cache
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\obj\Release\CommonBusiness.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\CommonBusiness\obj\Release\CommonBusiness.pdb

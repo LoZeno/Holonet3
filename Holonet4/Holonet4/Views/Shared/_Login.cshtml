@@ -1,0 +1,14 @@
+﻿@model Holonet4.Models.HomeModel
+
+
+@using (Html.BeginForm())
+{
+<form class="navbar-form pull-left">
+                            <label>Numero PG:</label> @Html.TextBoxFor(m => m.logon.username,"class='span2' placeholder='N° PG'")  <br />
+                            <label>Password:</label>  @Html.PasswordFor(m => m.logon.password,"class='span2' placeholder='password'")  <br />
+                            @Html.HiddenFor(m => m.logon.code)
+                            @Html.HiddenFor(m => m.logon.login)
+                            
+                            <button type="submit" class="btn">Log In</button>
+</form>
+}

@@ -1,0 +1,5 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x64\Debug\Reports.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x64\Debug\Reports.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x64\Debug\itextsharp.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x64\Debug\Reports.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x64\Debug\Reports.pdb

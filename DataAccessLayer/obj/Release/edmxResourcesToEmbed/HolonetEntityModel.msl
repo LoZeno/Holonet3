@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HolonetModelStoreContainer" CdmEntityContainer="HolonetEntities">
+    <EntitySetMapping Name="Abilitas">
+      <EntityTypeMapping TypeName="HolonetModel.Abilita">
+        <MappingFragment StoreEntitySet="Abilita">
+          <ScalarProperty Name="CdAbilita" ColumnName="CdAbilita" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Multiacquisto" ColumnName="Multiacquisto" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="BaseAvanzato" ColumnName="BaseAvanzato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountHackings">
+      <EntityTypeMapping TypeName="HolonetModel.AccountHacking">
+        <MappingFragment StoreEntitySet="AccountHacking">
+          <ScalarProperty Name="NumeroPGAccount" ColumnName="NumeroPGAccount" />
+          <ScalarProperty Name="NumeroPGHacker" ColumnName="NumeroPGHacker" />
+          <ScalarProperty Name="NumeroTentativo" ColumnName="NumeroTentativo" />
+          <ScalarProperty Name="Riuscito" ColumnName="Riuscito" />
+          <ScalarProperty Name="DataTentativo" ColumnName="DataTentativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attitudines">
+      <EntityTypeMapping TypeName="HolonetModel.Attitudine">
+        <MappingFragment StoreEntitySet="Attitudine">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="CdAttitudine" ColumnName="CdAttitudine" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bancas">
+      <EntityTypeMapping TypeName="HolonetModel.Banca">
+        <MappingFragment StoreEntitySet="Banca">
+          <ScalarProperty Name="NumeroBanca" ColumnName="NumeroBanca" />
+          <ScalarProperty Name="NomeBanca" ColumnName="NomeBanca" />
+          <ScalarProperty Name="Tasso" ColumnName="Tasso" />
+          <ScalarProperty Name="PeriodoTasso" ColumnName="PeriodoTasso" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="PeriodoCosto" ColumnName="PeriodoCosto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodiciHackings">
+      <EntityTypeMapping TypeName="HolonetModel.CodiciHacking">
+        <MappingFragment StoreEntitySet="CodiciHacking">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Livello" ColumnName="Livello" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContoBancarios">
+      <EntityTypeMapping TypeName="HolonetModel.ContoBancario">
+        <MappingFragment StoreEntitySet="ContoBancario">
+          <ScalarProperty Name="NumeroConto" ColumnName="NumeroConto" />
+          <ScalarProperty Name="NumeroBanca" ColumnName="NumeroBanca" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="PeriodoTasso" ColumnName="PeriodoTasso" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="PeriodoCosto" ColumnName="PeriodoCosto" />
+          <ScalarProperty Name="Tasso" ColumnName="Tasso" />
+          <ScalarProperty Name="DataSottoscrizione" ColumnName="DataSottoscrizione" />
+          <ScalarProperty Name="Totale" ColumnName="Totale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnzimaInfeziones">
+      <EntityTypeMapping TypeName="HolonetModel.EnzimaInfezione">
+        <MappingFragment StoreEntitySet="EnzimaInfezione">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Enzima" ColumnName="Enzima" />
+          <ScalarProperty Name="Infezione" ColumnName="Infezione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Eventoes">
+      <EntityTypeMapping TypeName="HolonetModel.Evento">
+        <MappingFragment StoreEntitySet="Evento">
+          <ScalarProperty Name="Chiuso" ColumnName="Chiuso" />
+          <ScalarProperty Name="Incasso" ColumnName="Incasso" />
+          <ScalarProperty Name="CdEvento" ColumnName="CdEvento" />
+          <ScalarProperty Name="TitoloEvento" ColumnName="TitoloEvento" />
+          <ScalarProperty Name="DataEvento" ColumnName="DataEvento" />
+          <ScalarProperty Name="PuntiAssegnati" ColumnName="PuntiAssegnati" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Giocatores">
+      <EntityTypeMapping TypeName="HolonetModel.Giocatore">
+        <MappingFragment StoreEntitySet="Giocatore">
+          <ScalarProperty Name="NumeroSW" ColumnName="NumeroSW" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DataNascita" ColumnName="DataNascita" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="CAP" ColumnName="CAP" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="DataIscrizione" ColumnName="DataIscrizione" />
+          <ScalarProperty Name="Sesso" ColumnName="Sesso" />
+          <ScalarProperty Name="TipoGiocatore" ColumnName="TipoGiocatore" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoloDisks">
+      <EntityTypeMapping TypeName="HolonetModel.HoloDisk">
+        <MappingFragment StoreEntitySet="HoloDisk">
+          <ScalarProperty Name="CodiceQr" ColumnName="CodiceQr" />
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Contenuto" ColumnName="Contenuto" />
+          <ScalarProperty Name="Hacking" ColumnName="Hacking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoloDiskFiles">
+      <EntityTypeMapping TypeName="HolonetModel.HoloDiskFile">
+        <MappingFragment StoreEntitySet="HoloDiskFiles">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="NumeroFile" ColumnName="NumeroFile" />
+          <ScalarProperty Name="NomeFile" ColumnName="NomeFile" />
+          <ScalarProperty Name="Contenuto" ColumnName="Contenuto" />
+          <ScalarProperty Name="LivelloCrypt" ColumnName="LivelloCrypt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoloDiskHackings">
+      <EntityTypeMapping TypeName="HolonetModel.HoloDiskHacking">
+        <MappingFragment StoreEntitySet="HoloDiskHacking">
+          <ScalarProperty Name="ProgressivoDisco" ColumnName="ProgressivoDisco" />
+          <ScalarProperty Name="NumeroPGHacker" ColumnName="NumeroPGHacker" />
+          <ScalarProperty Name="NumeroTentativo" ColumnName="NumeroTentativo" />
+          <ScalarProperty Name="Riuscito" ColumnName="Riuscito" />
+          <ScalarProperty Name="DataTentativo" ColumnName="DataTentativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Infeziones">
+      <EntityTypeMapping TypeName="HolonetModel.Infezione">
+        <MappingFragment StoreEntitySet="Infezione">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingredientis">
+      <EntityTypeMapping TypeName="HolonetModel.Ingredienti">
+        <MappingFragment StoreEntitySet="Ingredienti">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="ProgressivoSostanza" ColumnName="ProgressivoSostanza" />
+          <ScalarProperty Name="ProgressivoIngrediente" ColumnName="ProgressivoIngrediente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materialis">
+      <EntityTypeMapping TypeName="HolonetModel.Materiali">
+        <MappingFragment StoreEntitySet="Materiali">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Disponibilita" ColumnName="Disponibilita" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessaggioSalvatoes">
+      <EntityTypeMapping TypeName="HolonetModel.MessaggioSalvato">
+        <MappingFragment StoreEntitySet="MessaggioSalvato">
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="Provenienza" ColumnName="Provenienza" />
+          <ScalarProperty Name="Contenuto" ColumnName="Contenuto" />
+          <ScalarProperty Name="Hacking" ColumnName="Hacking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Missiones">
+      <EntityTypeMapping TypeName="HolonetModel.Missione">
+        <MappingFragment StoreEntitySet="Missione">
+          <ScalarProperty Name="DataCreazione" ColumnName="DataCreazione" />
+          <ScalarProperty Name="NumeroMissione" ColumnName="NumeroMissione" />
+          <ScalarProperty Name="Mandante" ColumnName="Mandante" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="Testo" ColumnName="Testo" />
+          <ScalarProperty Name="LivelloHacking" ColumnName="LivelloHacking" />
+          <ScalarProperty Name="Attiva" ColumnName="Attiva" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MissioneHackings">
+      <EntityTypeMapping TypeName="HolonetModel.MissioneHacking">
+        <MappingFragment StoreEntitySet="MissioneHacking">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="NumeroMissione" ColumnName="NumeroMissione" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="Riuscito" ColumnName="Riuscito" />
+          <ScalarProperty Name="DataTentativo" ColumnName="DataTentativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notizias">
+      <EntityTypeMapping TypeName="HolonetModel.Notizia">
+        <MappingFragment StoreEntitySet="Notizia">
+          <ScalarProperty Name="NumeroNotizia" ColumnName="NumeroNotizia" />
+          <ScalarProperty Name="DataCreazione" ColumnName="DataCreazione" />
+          <ScalarProperty Name="DataFine" ColumnName="DataFine" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="Testo" ColumnName="Testo" />
+          <ScalarProperty Name="Rete" ColumnName="Rete" />
+          <ScalarProperty Name="Autore" ColumnName="Autore" />
+          <ScalarProperty Name="LivelloHacking" ColumnName="LivelloHacking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NotiziaHackings">
+      <EntityTypeMapping TypeName="HolonetModel.NotiziaHacking">
+        <MappingFragment StoreEntitySet="NotiziaHacking">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="NumeroNotizia" ColumnName="NumeroNotizia" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="Riuscito" ColumnName="Riuscito" />
+          <ScalarProperty Name="DataTentativo" ColumnName="DataTentativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oggettis">
+      <EntityTypeMapping TypeName="HolonetModel.Oggetti">
+        <MappingFragment StoreEntitySet="Oggetti">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="CodiceOggetto" ColumnName="CodiceOggetto" />
+          <ScalarProperty Name="Cariche" ColumnName="Cariche" />
+          <ScalarProperty Name="DataScadenza" ColumnName="DataScadenza" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Immagine" ColumnName="Immagine" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personaggios">
+      <EntityTypeMapping TypeName="HolonetModel.Personaggio">
+        <MappingFragment StoreEntitySet="Personaggio">
+          <ScalarProperty Name="CodicePg" ColumnName="CodicePg" />
+          <ScalarProperty Name="LivelloCrittazione" ColumnName="LivelloCrittazione" />
+          <ScalarProperty Name="UltimaCrittazione" ColumnName="UltimaCrittazione" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="NumeroSW" ColumnName="NumeroSW" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Specie" ColumnName="Specie" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Punti" ColumnName="Punti" />
+          <ScalarProperty Name="Sesso" ColumnName="Sesso" />
+          <ScalarProperty Name="LatoOscuro" ColumnName="LatoOscuro" />
+          <ScalarProperty Name="DataCreazione" ColumnName="DataCreazione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="Vivo" ColumnName="Vivo" />
+          <ScalarProperty Name="DataMorte" ColumnName="DataMorte" />
+          <ScalarProperty Name="PasswordHolonet" ColumnName="PasswordHolonet" />
+          <ScalarProperty Name="Hacker" ColumnName="Hacker" />
+          <ScalarProperty Name="Enzima" ColumnName="Enzima" />
+          <ScalarProperty Name="Fazione" ColumnName="Fazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Portas">
+      <EntityTypeMapping TypeName="HolonetModel.Porta">
+        <MappingFragment StoreEntitySet="Porta">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="CodicePorta" ColumnName="CodicePorta" />
+          <ScalarProperty Name="LivelloHacking" ColumnName="LivelloHacking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostaInArrivoes">
+      <EntityTypeMapping TypeName="HolonetModel.PostaInArrivo">
+        <MappingFragment StoreEntitySet="PostaInArrivo">
+          <ScalarProperty Name="DataCancellazione" ColumnName="DataCancellazione" />
+          <ScalarProperty Name="NumeroMissione" ColumnName="NumeroMissione" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="Cancellata" ColumnName="Cancellata" />
+          <ScalarProperty Name="Letta" ColumnName="Letta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostaInUscitas">
+      <EntityTypeMapping TypeName="HolonetModel.PostaInUscita">
+        <MappingFragment StoreEntitySet="PostaInUscita">
+          <ScalarProperty Name="DataCancellazione" ColumnName="DataCancellazione" />
+          <ScalarProperty Name="NumeroMissione" ColumnName="NumeroMissione" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="Cancellata" ColumnName="Cancellata" />
+          <ScalarProperty Name="Letta" ColumnName="Letta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitiAbilitas">
+      <EntityTypeMapping TypeName="HolonetModel.RequisitiAbilita">
+        <MappingFragment StoreEntitySet="RequisitiAbilita">
+          <ScalarProperty Name="CdAbilita" ColumnName="CdAbilita" />
+          <ScalarProperty Name="CdRequisito" ColumnName="CdRequisito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retes">
+      <EntityTypeMapping TypeName="HolonetModel.Rete">
+        <MappingFragment StoreEntitySet="Rete">
+          <ScalarProperty Name="NumeroRete" ColumnName="NumeroRete" />
+          <ScalarProperty Name="NomeRete" ColumnName="NomeRete" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Fazione" ColumnName="Fazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rubricas">
+      <EntityTypeMapping TypeName="HolonetModel.Rubrica">
+        <MappingFragment StoreEntitySet="Rubrica">
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+          <ScalarProperty Name="NumeroSalvato" ColumnName="NumeroSalvato" />
+          <ScalarProperty Name="NomeVisualizzato" ColumnName="NomeVisualizzato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sostanzes">
+      <EntityTypeMapping TypeName="HolonetModel.Sostanze">
+        <MappingFragment StoreEntitySet="Sostanze">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="ModoUso" ColumnName="ModoUso" />
+          <ScalarProperty Name="ValoreEfficacia" ColumnName="ValoreEfficacia" />
+          <ScalarProperty Name="Effetto" ColumnName="Effetto" />
+          <ScalarProperty Name="CodiceSostanza" ColumnName="CodiceSostanza" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Disponibilita" ColumnName="Disponibilita" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Species">
+      <EntityTypeMapping TypeName="HolonetModel.Specie">
+        <MappingFragment StoreEntitySet="Specie">
+          <ScalarProperty Name="Specie1" ColumnName="Specie" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametris">
+      <EntityTypeMapping TypeName="HolonetModel.Parametri">
+        <MappingFragment StoreEntitySet="Parametri">
+          <ScalarProperty Name="Valore" ColumnName="Valore" />
+          <ScalarProperty Name="Parametro" ColumnName="Parametro" />
+          <ScalarProperty Name="Rete" ColumnName="Rete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistroIPs">
+      <EntityTypeMapping TypeName="HolonetModel.RegistroIP">
+        <MappingFragment StoreEntitySet="RegistroIP">
+          <ScalarProperty Name="Rete" ColumnName="Rete" />
+          <ScalarProperty Name="IndirizzoIP" ColumnName="IndirizzoIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Costruziones">
+      <EntityTypeMapping TypeName="HolonetModel.Costruzione">
+        <MappingFragment StoreEntitySet="Costruzione">
+          <ScalarProperty Name="CodiceMateriale" ColumnName="CodiceMateriale" />
+          <ScalarProperty Name="ProgressivoMateriale" ColumnName="ProgressivoMateriale" />
+          <ScalarProperty Name="CodiceOggetto" ColumnName="CodiceOggetto" />
+          <ScalarProperty Name="ProgressivoOggetto" ColumnName="ProgressivoOggetto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventoGiornis">
+      <EntityTypeMapping TypeName="HolonetModel.EventoGiorni">
+        <MappingFragment StoreEntitySet="EventoGiorni">
+          <ScalarProperty Name="CostoGiorno" ColumnName="CostoGiorno" />
+          <ScalarProperty Name="OraFuoriGioco" ColumnName="OraFuoriGioco" />
+          <ScalarProperty Name="OraInGioco" ColumnName="OraInGioco" />
+          <ScalarProperty Name="PuntiAssegnati" ColumnName="PuntiAssegnati" />
+          <ScalarProperty Name="DataGiorno" ColumnName="DataGiorno" />
+          <ScalarProperty Name="CdEvento" ColumnName="CdEvento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventoGiorniPersonaggios">
+      <EntityTypeMapping TypeName="HolonetModel.EventoGiorniPersonaggio">
+        <MappingFragment StoreEntitySet="EventoGiorniPersonaggio">
+          <ScalarProperty Name="Partecipato" ColumnName="Partecipato" />
+          <ScalarProperty Name="DataPagamento" ColumnName="DataPagamento" />
+          <ScalarProperty Name="Pagato" ColumnName="Pagato" />
+          <ScalarProperty Name="NumeroPg" ColumnName="NumeroPg" />
+          <ScalarProperty Name="DataGiorno" ColumnName="DataGiorno" />
+          <ScalarProperty Name="CdEvento" ColumnName="CdEvento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AbilitaAttitudine1" TypeName="HolonetModel.AbilitaAttitudine1" StoreEntitySet="AbilitaAttitudine">
+      <EndProperty Name="Abilita">
+        <ScalarProperty Name="CdAbilita" ColumnName="CdAbilita" />
+      </EndProperty>
+      <EndProperty Name="Attitudine">
+        <ScalarProperty Name="CdAttitudine" ColumnName="CdAttitudine" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="AbilitaPersonaggios">
+      <EntityTypeMapping TypeName="HolonetModel.AbilitaPersonaggio">
+        <MappingFragment StoreEntitySet="AbilitaPersonaggio">
+          <ScalarProperty Name="Specifiche" ColumnName="Specifiche" />
+          <ScalarProperty Name="CdAttitudine" ColumnName="CdAttitudine" />
+          <ScalarProperty Name="NumeroAcquisti" ColumnName="NumeroAcquisti" />
+          <ScalarProperty Name="CdAbilita" ColumnName="CdAbilita" />
+          <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ListePersonaggio" TypeName="HolonetModel.ListePersonaggio" StoreEntitySet="ListePersonaggio">
+      <EndProperty Name="Personaggio">
+        <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+      </EndProperty>
+      <EndProperty Name="Attitudine">
+        <ScalarProperty Name="CdAttitudine" ColumnName="CdAttitudine" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="NewElementis">
+      <EntityTypeMapping TypeName="IsTypeOf(HolonetModel.NewElementi)">
+        <MappingFragment StoreEntitySet="NewElementi">
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="DataScadenza" ColumnName="DataScadenza" />
+          <ScalarProperty Name="Disponibilita" ColumnName="Disponibilita" />
+          <ScalarProperty Name="Immagine" ColumnName="Immagine" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Effetto" ColumnName="Effetto" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(HolonetModel.NewOggetti)">
+        <MappingFragment StoreEntitySet="NewOggetti">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Progressivo" ColumnName="ProgressivoOggetto" />
+          <ScalarProperty Name="NumeroCariche" ColumnName="NumeroCariche" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(HolonetModel.NewSostanze)">
+        <MappingFragment StoreEntitySet="NewSostanze">
+          <ScalarProperty Name="Progressivo" ColumnName="ProgressivoSostanza" />
+          <ScalarProperty Name="ModoUso" ColumnName="ModoUso" />
+          <ScalarProperty Name="ValoreEfficacia" ColumnName="ValoreEfficacia" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodiciQrs">
+      <EntityTypeMapping TypeName="HolonetModel.CodiciQr">
+        <MappingFragment StoreEntitySet="CodiciQr">
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewElementiDisponibilitas">
+      <EntityTypeMapping TypeName="HolonetModel.NewElementiDisponibilita">
+        <MappingFragment StoreEntitySet="NewElementiDisponibilita">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewFormules">
+      <EntityTypeMapping TypeName="HolonetModel.NewFormule">
+        <MappingFragment StoreEntitySet="NewFormule">
+          <ScalarProperty Name="Ingrediente" ColumnName="Ingrediente" />
+          <ScalarProperty Name="NumeroIngrediente" ColumnName="NumeroIngrediente" />
+          <ScalarProperty Name="Risultato" ColumnName="Risultato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoSostanzes">
+      <EntityTypeMapping TypeName="HolonetModel.TipoSostanze">
+        <MappingFragment StoreEntitySet="TipoSostanze">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoOggettis">
+      <EntityTypeMapping TypeName="HolonetModel.TipoOggetti">
+        <MappingFragment StoreEntitySet="TipoOggetti">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Progressivo" ColumnName="Progressivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="InfezionePersonaggio" TypeName="HolonetModel.InfezionePersonaggio" StoreEntitySet="InfezionePersonaggio">
+      <EndProperty Name="Personaggio">
+        <ScalarProperty Name="NumeroPG" ColumnName="NumeroPG" />
+      </EndProperty>
+      <EndProperty Name="Infezione">
+        <ScalarProperty Name="Progressivo" ColumnName="Infezione" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="EventoElementis">
+      <EntityTypeMapping TypeName="HolonetModel.EventoElementi">
+        <MappingFragment StoreEntitySet="EventoElementi">
+          <ScalarProperty Name="NumeroCopie" ColumnName="NumeroCopie" />
+          <ScalarProperty Name="ProgressivoElemento" ColumnName="ProgressivoElemento" />
+          <ScalarProperty Name="CdEvento" ColumnName="CdEvento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventoHolodischis">
+      <EntityTypeMapping TypeName="HolonetModel.EventoHolodischi">
+        <MappingFragment StoreEntitySet="EventoHolodischi">
+          <ScalarProperty Name="NumeroCopie" ColumnName="NumeroCopie" />
+          <ScalarProperty Name="ProgressivoDisco" ColumnName="ProgressivoDisco" />
+          <ScalarProperty Name="CdEvento" ColumnName="CdEvento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

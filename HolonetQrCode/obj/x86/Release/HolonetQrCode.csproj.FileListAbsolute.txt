@@ -1,0 +1,5 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\bin\x86\Release\HolonetQrCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\bin\x86\Release\HolonetQrCode.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\bin\x86\Release\MessagingToolkit.QRCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\obj\x86\Release\HolonetQrCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\obj\x86\Release\HolonetQrCode.pdb

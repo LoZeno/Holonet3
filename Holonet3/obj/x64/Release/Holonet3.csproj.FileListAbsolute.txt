@@ -1,0 +1,16 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\x64\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\x86\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\Holonet3.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\Holonet3.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\CommonBusiness.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\DataAccessLayer.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\HolonetControls.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\itextsharp.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\System.Data.SQLite.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\System.Data.SQLite.Linq.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\CommonBusiness.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\DataAccessLayer.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\bin\x64\Release\HolonetControls.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\obj\x64\Release\Holonet3.csprojResolveAssemblyReference.cache
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\obj\x64\Release\Holonet3.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\obj\x64\Release\Holonet3.pdb

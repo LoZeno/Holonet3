@@ -1,0 +1,17 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\x64\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\x86\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\Reports.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\Reports.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\DataAccessLayer.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\HolonetQrCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\itextsharp.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\System.Data.SQLite.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\System.Data.SQLite.Linq.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\MessagingToolkit.QRCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\DataAccessLayer.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\bin\x86\Debug\HolonetQrCode.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x86\Debug\Reports.csprojResolveAssemblyReference.cache
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x86\Debug\Reports.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x86\Debug\Reports.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x86\Debug\Reports.Properties.Resources.resources
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\Reports\obj\x86\Debug\Reports.csproj.GenerateResource.Cache

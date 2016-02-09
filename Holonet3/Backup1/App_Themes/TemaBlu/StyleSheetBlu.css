@@ -1,0 +1,73 @@
+﻿body 
+{
+    background-color: Blue;
+    background-image: url('../../Images/Sfondi/holonet_new.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+    -o-background-size: 100% 100%, auto;
+    -moz-background-size: 100% 100%, auto;
+    -webkit-background-size: 100% 100%, auto;
+    background-size: 100% 100%, auto;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+}
+
+
+/* Custom CSS Classes */
+.GridViewHeader
+{
+    background-color:rgba(75,108,199,0.7);
+    color: White;
+}
+tr.GridViewRow
+{
+    background-color:rgba(255,255,255,0.7);
+}
+tr.GridViewAltRow
+{
+    background-color:rgba(211,211,211,0.5);
+}

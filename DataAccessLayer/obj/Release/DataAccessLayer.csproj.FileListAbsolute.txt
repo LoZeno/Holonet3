@@ -1,0 +1,10 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\x64\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\x86\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\DataAccessLayer.dll.config
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\DataAccessLayer.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\System.Data.SQLite.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\bin\Release\System.Data.SQLite.Linq.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\obj\Release\DataAccessLayer.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\obj\Release\DataAccessLayer.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\DataAccessLayer\obj\Release\DataAccessLayer.csprojResolveAssemblyReference.cache

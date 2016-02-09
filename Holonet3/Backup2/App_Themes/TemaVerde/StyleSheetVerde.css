@@ -1,0 +1,73 @@
+﻿body 
+{
+    background-color: Green;
+    background-image: url('../../Images/Sfondi/impero_new.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+    -o-background-size: 100% 100%, auto;
+    -moz-background-size: 100% 100%, auto;
+    -webkit-background-size: 100% 100%, auto;
+    background-size: 100% 100%, auto;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #0D6C10;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#334F33;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #466546;
+    border: 1px #587058 solid;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #BFE6BF;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465446;
+}
+
+
+/* Custom CSS Classes */
+.GridViewHeader
+{
+    background-color:rgba(13,108,16,0.7);
+    color: White;
+}
+tr.GridViewRow
+{
+    background-color:rgba(255,255,255,0.7);
+}
+tr.GridViewAltRow
+{
+    background-color:rgba(211,211,211,0.5);
+}

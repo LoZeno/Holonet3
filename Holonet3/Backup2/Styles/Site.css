@@ -1,0 +1,340 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+table
+{
+    background-color:rgba(143,145,131,0.5);
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 90%;
+    background-color:rgba(255,255,255,0.7); /*Questo sistema permette di avere uno sfondo del DIV semi-trasparente, lo 0.7 in fondo è il livello di opacità*/
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+    min-width: 800px;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+div.mainDiv
+{
+    margin: 0 0 10px 10px;
+    float:right;
+    width:75%;
+    min-width: 400px;
+    /*overflow-y:auto;*/
+    height:85%;
+}
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    min-width:200px;
+    float:left;
+    position:fixed;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    border: 1px #B54545 solid;
+    color: #dde4ec; /*colore del testo, non cambiare*/
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    color: #465c71; /*colore del testo, non cambiare*/
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    color: #cfdbe6; /*colore del testo, non cambiare*/
+    text-decoration: none;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align:right;
+    width: 50%;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Custom CSS Classes */
+.GridViewHeader
+{
+    /*background-color:rgba(128,128,128,0.7);
+    color: White;*/
+}
+tr.GridViewRow
+{
+    /*background-color:rgba(255,255,255,0.7);*/
+}
+tr.GridViewAltRow
+{
+    /*background-color:rgba(211,211,211,0.5);*/
+}
+
+.Status
+{
+    color:Red;
+    font-size:medium;
+    font-weight:bold;
+}
+
+.UnreadMessage
+{
+    font-weight : bolder;
+}
+.ReadMessage
+{
+    font-weight : lighter;
+}
+.hiddencol
+{
+    display:none;
+}
+
+div.functionContainer
+{
+    width:100%;
+    overflow-x:auto;
+    white-space:nowrap;
+    background-color:rgba(143,145,131,0.5);
+}
+
+div.functionContent
+{
+    display:inline-block;
+    vertical-align:top;
+}
+
+.wingdings
+{
+    font-family: Wingdings;
+}

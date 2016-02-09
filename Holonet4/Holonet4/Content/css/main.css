@@ -1,0 +1,29 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+canvas { display: block; }
+body
+{
+      background-color:#000;
+  background-image:url('../img/bg_base.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+        background-attachment:fixed;
+    -o-background-size: 100% 100%, auto;
+    -moz-background-size: 100% 100%, auto;
+    -webkit-background-size: 100% 100%, auto;
+    background-size: 100% 100%, auto;
+}
+
+
+
+
+
+
+
+
+
+

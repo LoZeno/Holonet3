@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEA55C81-9371-419C-9755-A56E996D6E99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HolonetWinControls</RootNamespace>
+    <AssemblyName>HolonetWinControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\HolonetWinControls.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\HolonetWinControls.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\HolonetWinControls.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\HolonetWinControls.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abilita\ControlAbilita.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Abilita\ControlAbilita.Designer.cs">
+      <DependentUpon>ControlAbilita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abilita\InsertAbilita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abilita\InsertAbilita.Designer.cs">
+      <DependentUpon>InsertAbilita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abilita\InsertLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abilita\InsertLista.Designer.cs">
+      <DependentUpon>InsertLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClasses\BaseManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\BaseManagerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\ToolboxManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\AggiungiDiscoAEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\AggiungiDiscoAEvento.Designer.cs">
+      <DependentUpon>AggiungiDiscoAEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\AggiungiElementoAEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\AggiungiElementoAEvento.Designer.cs">
+      <DependentUpon>AggiungiElementoAEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\AggiungiGiorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\AggiungiGiorno.Designer.cs">
+      <DependentUpon>AggiungiGiorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\ControlEventi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eventi\ControlEventi.Designer.cs">
+      <DependentUpon>ControlEventi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\ControlStampeEventi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eventi\ControlStampeEventi.Designer.cs">
+      <DependentUpon>ControlStampeEventi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\GestisciPartecipanti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\GestisciPartecipanti.Designer.cs">
+      <DependentUpon>GestisciPartecipanti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\InsertEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\InsertEvent.Designer.cs">
+      <DependentUpon>InsertEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\IscriviGiocatore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\IscriviGiocatore.Designer.cs">
+      <DependentUpon>IscriviGiocatore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventi\ModificaDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventi\ModificaDate.Designer.cs">
+      <DependentUpon>ModificaDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\AggiungiFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Holodischi\AggiungiFile.Designer.cs">
+      <DependentUpon>AggiungiFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\ControlHolodischi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Holodischi\ControlHolodischi.Designer.cs">
+      <DependentUpon>ControlHolodischi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\CreaDatapad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Holodischi\CreaDatapad.Designer.cs">
+      <DependentUpon>CreaDatapad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infezioni\AggiungiInfezione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infezioni\AggiungiInfezione.Designer.cs">
+      <DependentUpon>AggiungiInfezione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infezioni\ControlInfezioni.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Infezioni\ControlInfezioni.Designer.cs">
+      <DependentUpon>ControlInfezioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infezioni\CreaInfezione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infezioni\CreaInfezione.Designer.cs">
+      <DependentUpon>CreaInfezione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\ControlMessaggi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Messaggi\ControlMessaggi.Designer.cs">
+      <DependentUpon>ControlMessaggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\CreaMessaggio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messaggi\CreaMessaggio.Designer.cs">
+      <DependentUpon>CreaMessaggio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notizie\ControlNotizie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notizie\ControlNotizie.Designer.cs">
+      <DependentUpon>ControlNotizie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notizie\CreaNotizia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notizie\CreaNotizia.Designer.cs">
+      <DependentUpon>CreaNotizia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oggetti\AggiungiComponente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oggetti\AggiungiComponente.Designer.cs">
+      <DependentUpon>AggiungiComponente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oggetti\ControlOggetti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Oggetti\ControlOggetti.Designer.cs">
+      <DependentUpon>ControlOggetti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oggetti\CreaTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oggetti\CreaTipo.Designer.cs">
+      <DependentUpon>CreaTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oggetti\InsertOggetto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oggetti\InsertOggetto.Designer.cs">
+      <DependentUpon>InsertOggetto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personaggi\AggiungiAbilita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personaggi\AggiungiAbilita.Designer.cs">
+      <DependentUpon>AggiungiAbilita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personaggi\ControlPersonaggi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Personaggi\ControlPersonaggi.Designer.cs">
+      <DependentUpon>ControlPersonaggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personaggi\InsertGiocatore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personaggi\InsertGiocatore.Designer.cs">
+      <DependentUpon>InsertGiocatore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personaggi\InsertPersonaggio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personaggi\InsertPersonaggio.Designer.cs">
+      <DependentUpon>InsertPersonaggio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personaggi\InsertSpecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personaggi\InsertSpecie.Designer.cs">
+      <DependentUpon>InsertSpecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sostanze\AggiungiComponente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sostanze\AggiungiComponente.Designer.cs">
+      <DependentUpon>AggiungiComponente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sostanze\ControlSostanze.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sostanze\ControlSostanze.Designer.cs">
+      <DependentUpon>ControlSostanze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sostanze\InsertSostanza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sostanze\InsertSostanza.Designer.cs">
+      <DependentUpon>InsertSostanza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sostanze\ModiUso.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Abilita\ControlAbilita.resx">
+      <DependentUpon>ControlAbilita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abilita\InsertAbilita.resx">
+      <DependentUpon>InsertAbilita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abilita\InsertLista.resx">
+      <DependentUpon>InsertLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\AggiungiDiscoAEvento.resx">
+      <DependentUpon>AggiungiDiscoAEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\AggiungiElementoAEvento.resx">
+      <DependentUpon>AggiungiElementoAEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\AggiungiGiorno.resx">
+      <DependentUpon>AggiungiGiorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\ControlEventi.resx">
+      <DependentUpon>ControlEventi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\ControlStampeEventi.resx">
+      <DependentUpon>ControlStampeEventi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\GestisciPartecipanti.resx">
+      <DependentUpon>GestisciPartecipanti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\InsertEvent.resx">
+      <DependentUpon>InsertEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\IscriviGiocatore.resx">
+      <DependentUpon>IscriviGiocatore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventi\ModificaDate.resx">
+      <DependentUpon>ModificaDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holodischi\AggiungiFile.resx">
+      <DependentUpon>AggiungiFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holodischi\ControlHolodischi.resx">
+      <DependentUpon>ControlHolodischi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holodischi\CreaDatapad.resx">
+      <DependentUpon>CreaDatapad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infezioni\AggiungiInfezione.resx">
+      <DependentUpon>AggiungiInfezione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infezioni\ControlInfezioni.resx">
+      <DependentUpon>ControlInfezioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infezioni\CreaInfezione.resx">
+      <DependentUpon>CreaInfezione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messaggi\ControlMessaggi.resx">
+      <DependentUpon>ControlMessaggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messaggi\CreaMessaggio.resx">
+      <DependentUpon>CreaMessaggio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notizie\ControlNotizie.resx">
+      <DependentUpon>ControlNotizie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notizie\CreaNotizia.resx">
+      <DependentUpon>CreaNotizia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oggetti\AggiungiComponente.resx">
+      <DependentUpon>AggiungiComponente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oggetti\ControlOggetti.resx">
+      <DependentUpon>ControlOggetti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oggetti\CreaTipo.resx">
+      <DependentUpon>CreaTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oggetti\InsertOggetto.resx">
+      <DependentUpon>InsertOggetto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personaggi\AggiungiAbilita.resx">
+      <DependentUpon>AggiungiAbilita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personaggi\ControlPersonaggi.resx">
+      <DependentUpon>ControlPersonaggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personaggi\InsertGiocatore.resx">
+      <DependentUpon>InsertGiocatore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personaggi\InsertPersonaggio.resx">
+      <DependentUpon>InsertPersonaggio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personaggi\InsertSpecie.resx">
+      <DependentUpon>InsertSpecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sostanze\AggiungiComponente.resx">
+      <DependentUpon>AggiungiComponente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sostanze\ControlSostanze.resx">
+      <DependentUpon>ControlSostanze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sostanze\InsertSostanza.resx">
+      <DependentUpon>InsertSostanza.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CommonBusiness\CommonBusiness.csproj">
+      <Project>{FC5DB41B-7103-4C93-90EA-C11FB3826CAE}</Project>
+      <Name>CommonBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{903EA968-B566-4206-8A5F-77C58A54CCD5}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{788D5A2D-F552-4095-A478-23293D6933B8}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\CommonBusiness.Eventi.Partecipazione.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Abilita.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Attitudine.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Evento.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.EventoGiorni.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.EventoGiorniPersonaggio.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Giocatore.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.HoloDisk.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.HoloDiskFile.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Infezione.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Missione.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.NewElementi.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.NewOggetti.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.NewSostanze.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Notizia.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Personaggio.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.Rete.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.TipoOggetti.datasource" />
+    <None Include="Properties\DataSources\DataAccessLayer.TipoSostanze.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

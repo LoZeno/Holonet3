@@ -1,0 +1,6 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\bin\Release\HolonetQrCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\bin\Release\HolonetQrCode.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\bin\Release\MessagingToolkit.QRCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\obj\Release\HolonetQrCode.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\obj\Release\HolonetQrCode.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetQrCode\obj\Release\HolonetQrCode.csprojResolveAssemblyReference.cache

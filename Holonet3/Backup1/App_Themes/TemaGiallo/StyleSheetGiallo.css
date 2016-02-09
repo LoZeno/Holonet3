@@ -1,0 +1,72 @@
+﻿body 
+{
+    background-color: Yellow;
+    background-image: url('../../Images/Sfondi/fpi_new.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+    -o-background-size: 100% 100%, auto;
+    -moz-background-size: 100% 100%, auto;
+    -webkit-background-size: 100% 100%, auto;
+    background-size: 100% 100%, auto;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #8E9143;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9; /*colore del testo, non cambiare*/
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3B3C1E;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #474A03;
+    border: 1px #4D5416 solid;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #BFC198;
+}
+
+div.menu ul li a:active
+{
+    background-color: #464809;
+}
+
+/* Custom CSS Classes */
+.GridViewHeader
+{
+    background-color:rgba(142,145,67,0.7);
+    color: White;
+}
+tr.GridViewRow
+{
+    background-color:rgba(255,255,255,0.7);
+}
+tr.GridViewAltRow
+{
+    background-color:rgba(211,211,211,0.5);
+}

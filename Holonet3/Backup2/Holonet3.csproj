@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C5995AB-5191-49F0-AA59-BD5C132662AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Holonet3</RootNamespace>
+    <AssemblyName>Holonet3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>D:\SVILUPPO SOFTWARE\Holonet3\trunk\Holonet3\Backup1\</UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Holonet3.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Holonet3.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Holonet3.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Holonet3.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>packages\itextsharp.5.3.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\System.Data.SQLite.1.0.82.0\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\System.Data.SQLite.1.0.82.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="AddOn\QRCodeReader\Default.aspx" />
+    <Content Include="AddOn\QRCodeReader\index.html" />
+    <Content Include="AddOn\QRCodeReader\js\jquery.min.js" />
+    <Content Include="AddOn\QRCodeReader\js\jquery.webcamqrcode.js" />
+    <Content Include="AddOn\QRCodeReader\js\jquery.webcamqrcode.min.js" />
+    <Content Include="AddOn\QRCodeReader\swf\webcamqrcode.swf" />
+    <Content Include="AnalisiMedica\AnalisiMedica.aspx" />
+    <Content Include="AnalisiMedica\NewAnalisiMedica.aspx" />
+    <Content Include="App_Themes\TemaGiallo\StyleSheetGiallo.css" />
+    <Content Include="App_Themes\TemaRosso\StyleSheetRosso.css" />
+    <Content Include="App_Themes\TemaVerde\StyleSheetVerde.css" />
+    <Content Include="CartellaPersonale\FilePersonali.aspx" />
+    <Content Include="CartellaPersonale\ListaFiles.ascx" />
+    <Content Include="CartellaPersonale\SingleFile.ascx" />
+    <Content Include="Criptazione\TentativoDecodifica.ascx" />
+    <Content Include="Hacking\HackedAccount.aspx" />
+    <Content Include="Hacking\HackedContacts.aspx" />
+    <Content Include="Hacking\HackedFiles.aspx" />
+    <Content Include="Hacking\HackedIncoming.aspx" />
+    <Content Include="Hacking\HackedNetwork.aspx" />
+    <Content Include="Hacking\HackedNews.aspx" />
+    <Content Include="Hacking\HackedOutgoing.aspx" />
+    <Content Include="Hacking\NewHackedNetwork.aspx" />
+    <Content Include="Hacking\TentativoHacking.ascx" />
+    <Content Include="Holodischi\LetturaDischi.aspx" />
+    <Content Include="Holodischi\ListaHoloFiles.ascx" />
+    <Content Include="Holodischi\NewLetturaDischi.aspx" />
+    <Content Include="Holodischi\SingleHoloFile.ascx" />
+    <Content Include="Holonet.htm" />
+    <Content Include="IdentificaOggetti\IdentificaOggetti.aspx" />
+    <Content Include="IdentificaOggetti\NewIdentificaOggetti.aspx" />
+    <Content Include="IdentificazioneSostanze\IdentificazioneSostanze.aspx" />
+    <Content Include="IdentificazioneSostanze\NewIdentificazioneSostanze.aspx" />
+    <Content Include="IdentificazioneTossine\IdentificazioneTossine.aspx" />
+    <Content Include="IdentificazioneTossine\NewIdentificazioneTossine.aspx" />
+    <Content Include="Images\Graphics\balls64.gif" />
+    <Content Include="Images\Graphics\dots64.gif" />
+    <Content Include="Images\Graphics\globe64.gif" />
+    <Content Include="Images\Graphics\loader64.gif" />
+    <Content Include="Impero.htm" />
+    <Content Include="Informatica\Criptazione.ascx" />
+    <Content Include="Informatica\Decriptazione.ascx" />
+    <Content Include="Informatica\Informatica.aspx" />
+    <Content Include="Informatica\Pubblicazione.ascx" />
+    <Content Include="LaboratorioBiochimico\LaboratorioBiochimico.aspx" />
+    <Content Include="LaboratorioBiochimico\NewLaboratorioBiochimico.aspx" />
+    <Content Include="LaboratorioChimico\LaboratorioChimico.aspx" />
+    <Content Include="Federazione.htm" />
+    <Content Include="LaboratorioChimico\NewLaboratorioChimico.aspx" />
+    <Content Include="LaboratorioTecnico\CreazioneOggetti.aspx" />
+    <Content Include="LaboratorioTecnico\NewCreazioneOggetti.aspx" />
+    <Content Include="Login\EndSession.aspx" />
+    <Content Include="Login\LoginFPI.aspx" />
+    <Content Include="Login\LoginHolonet.aspx" />
+    <Content Include="Login\LoginImpero.aspx" />
+    <Content Include="Login\LoginRepubblica.aspx" />
+    <Content Include="Login\LoginUserControl.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Themes\TemaBlu\StyleSheetBlu.css" />
+    <Content Include="Images\Bottoni\backBtn.jpg" />
+    <Content Include="Images\Bottoni\bankBtn.jpg" />
+    <Content Include="Images\Bottoni\barcode.gif" />
+    <Content Include="Images\Bottoni\bullseye.jpg" />
+    <Content Include="Images\Bottoni\chimica.gif" />
+    <Content Include="Images\Bottoni\ChiudiBtn.jpg" />
+    <Content Include="Images\Bottoni\Chiudi_D.jpg" />
+    <Content Include="Images\Bottoni\DISCO.jpg" />
+    <Content Include="Images\Bottoni\medkit.gif" />
+    <Content Include="Images\Bottoni\MenuBtn.jpg" />
+    <Content Include="Images\Bottoni\messaggi.gif" />
+    <Content Include="Images\Bottoni\poison.gif" />
+    <Content Include="Images\Sfondi\fpi_new.jpg" />
+    <Content Include="Images\Sfondi\holonet_new.jpg" />
+    <Content Include="Images\Sfondi\impero_new.jpg" />
+    <Content Include="Images\Bottoni\Menu.jpg" />
+    <Content Include="Images\Bottoni\news.jpg" />
+    <Content Include="Images\Sfondi\repubblica_new.jpg" />
+    <Content Include="Images\Bottoni\utilityBtn.jpg" />
+    <Content Include="Images\Volti\1.jpg" />
+    <Content Include="Images\Volti\10.jpg" />
+    <Content Include="Images\Volti\11.jpg" />
+    <Content Include="Images\Volti\12.jpg" />
+    <Content Include="Images\Volti\13.jpg" />
+    <Content Include="Images\Volti\14.jpg" />
+    <Content Include="Images\Volti\15.jpg" />
+    <Content Include="Images\Volti\16.jpg" />
+    <Content Include="Images\Volti\17.jpg" />
+    <Content Include="Images\Volti\18.jpg" />
+    <Content Include="Images\Volti\19.jpg" />
+    <Content Include="Images\Volti\2.jpg" />
+    <Content Include="Images\Volti\20.jpg" />
+    <Content Include="Images\Volti\21.jpg" />
+    <Content Include="Images\Volti\22.jpg" />
+    <Content Include="Images\Volti\23.jpg" />
+    <Content Include="Images\Volti\24.jpg" />
+    <Content Include="Images\Volti\25.jpg" />
+    <Content Include="Images\Volti\26.jpg" />
+    <Content Include="Images\Volti\27.jpg" />
+    <Content Include="Images\Volti\28.jpg" />
+    <Content Include="Images\Volti\29.jpg" />
+    <Content Include="Images\Volti\3.jpg" />
+    <Content Include="Images\Volti\30.jpg" />
+    <Content Include="Images\Volti\31.jpg" />
+    <Content Include="Images\Volti\32.jpg" />
+    <Content Include="Images\Volti\33.jpg" />
+    <Content Include="Images\Volti\4.jpg" />
+    <Content Include="Images\Volti\5.jpg" />
+    <Content Include="Images\Volti\6.jpg" />
+    <Content Include="Images\Volti\7.jpg" />
+    <Content Include="Images\Volti\8.jpg" />
+    <Content Include="Images\Volti\9.jpg" />
+    <Content Include="Login\NewLogin.aspx" />
+    <Content Include="Login\QRLoginUserControl.ascx" />
+    <Content Include="Messaggi\Messaggi.aspx" />
+    <Content Include="Messaggi\MessaggiInviati.ascx" />
+    <Content Include="Messaggi\MessaggiRicevuti.ascx" />
+    <Content Include="Messaggi\NewMessaggi.aspx" />
+    <Content Include="Messaggi\NewRubrica.aspx" />
+    <Content Include="Messaggi\Rubrica.aspx" />
+    <Content Include="Messaggi\SingleMessageControl.ascx" />
+    <Content Include="Messaggi\SingleSentMessageControl.ascx" />
+    <Content Include="Notizie\Notizie.aspx" />
+    <Content Include="QRCodeReader\QrCodeReader.ascx" />
+    <Content Include="Repubblica.htm" />
+    <Content Include="Scripts\jquery.jscrollpane.js" />
+    <Content Include="Scripts\jquery.jscrollpane.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.webcamqrcode.js" />
+    <Content Include="Scripts\jQueryExtensions.js" />
+    <Content Include="Scripts\mwheelIntent.js" />
+    <Content Include="SelezioneRete.aspx" />
+    <Content Include="Styles\jquery.jscrollpane.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="swf\webcamqrcode.swf" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddOn\QRCodeReader\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddOn\QRCodeReader\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisiMedica\AnalisiMedica.aspx.cs">
+      <DependentUpon>AnalisiMedica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnalisiMedica\AnalisiMedica.aspx.designer.cs">
+      <DependentUpon>AnalisiMedica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisiMedica\NewAnalisiMedica.aspx.cs">
+      <DependentUpon>NewAnalisiMedica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnalisiMedica\NewAnalisiMedica.aspx.designer.cs">
+      <DependentUpon>NewAnalisiMedica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartellaPersonale\FilePersonali.aspx.cs">
+      <DependentUpon>FilePersonali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartellaPersonale\FilePersonali.aspx.designer.cs">
+      <DependentUpon>FilePersonali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartellaPersonale\IFilePersonali.cs" />
+    <Compile Include="CartellaPersonale\ListaFiles.ascx.cs">
+      <DependentUpon>ListaFiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartellaPersonale\ListaFiles.ascx.designer.cs">
+      <DependentUpon>ListaFiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CartellaPersonale\SingleFile.ascx.cs">
+      <DependentUpon>SingleFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartellaPersonale\SingleFile.ascx.designer.cs">
+      <DependentUpon>SingleFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Criptazione\TentativoDecodifica.ascx.cs">
+      <DependentUpon>TentativoDecodifica.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Criptazione\TentativoDecodifica.ascx.designer.cs">
+      <DependentUpon>TentativoDecodifica.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedAccount.aspx.cs">
+      <DependentUpon>HackedAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedAccount.aspx.designer.cs">
+      <DependentUpon>HackedAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedContacts.aspx.cs">
+      <DependentUpon>HackedContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedContacts.aspx.designer.cs">
+      <DependentUpon>HackedContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedFiles.aspx.cs">
+      <DependentUpon>HackedFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedFiles.aspx.designer.cs">
+      <DependentUpon>HackedFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedIncoming.aspx.cs">
+      <DependentUpon>HackedIncoming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedIncoming.aspx.designer.cs">
+      <DependentUpon>HackedIncoming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedNetwork.aspx.cs">
+      <DependentUpon>HackedNetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedNetwork.aspx.designer.cs">
+      <DependentUpon>HackedNetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedNews.aspx.cs">
+      <DependentUpon>HackedNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedNews.aspx.designer.cs">
+      <DependentUpon>HackedNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\HackedOutgoing.aspx.cs">
+      <DependentUpon>HackedOutgoing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\HackedOutgoing.aspx.designer.cs">
+      <DependentUpon>HackedOutgoing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\NewHackedNetwork.aspx.cs">
+      <DependentUpon>NewHackedNetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\NewHackedNetwork.aspx.designer.cs">
+      <DependentUpon>NewHackedNetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hacking\TentativoHacking.ascx.cs">
+      <DependentUpon>TentativoHacking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hacking\TentativoHacking.ascx.designer.cs">
+      <DependentUpon>TentativoHacking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\LetturaDischi.aspx.cs">
+      <DependentUpon>LetturaDischi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holodischi\LetturaDischi.aspx.designer.cs">
+      <DependentUpon>LetturaDischi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\ListaHoloFiles.ascx.cs">
+      <DependentUpon>ListaHoloFiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holodischi\ListaHoloFiles.ascx.designer.cs">
+      <DependentUpon>ListaHoloFiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\NewLetturaDischi.aspx.cs">
+      <DependentUpon>NewLetturaDischi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holodischi\NewLetturaDischi.aspx.designer.cs">
+      <DependentUpon>NewLetturaDischi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holodischi\SingleHoloFile.ascx.cs">
+      <DependentUpon>SingleHoloFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holodischi\SingleHoloFile.ascx.designer.cs">
+      <DependentUpon>SingleHoloFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificaOggetti\IdentificaOggetti.aspx.cs">
+      <DependentUpon>IdentificaOggetti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentificaOggetti\IdentificaOggetti.aspx.designer.cs">
+      <DependentUpon>IdentificaOggetti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificaOggetti\NewIdentificaOggetti.aspx.cs">
+      <DependentUpon>NewIdentificaOggetti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentificaOggetti\NewIdentificaOggetti.aspx.designer.cs">
+      <DependentUpon>NewIdentificaOggetti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificazioneSostanze\IdentificazioneSostanze.aspx.cs">
+      <DependentUpon>IdentificazioneSostanze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentificazioneSostanze\IdentificazioneSostanze.aspx.designer.cs">
+      <DependentUpon>IdentificazioneSostanze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificazioneSostanze\NewIdentificazioneSostanze.aspx.cs">
+      <DependentUpon>NewIdentificazioneSostanze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentificazioneSostanze\NewIdentificazioneSostanze.aspx.designer.cs">
+      <DependentUpon>NewIdentificazioneSostanze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificazioneTossine\IdentificazioneTossine.aspx.cs">
+      <DependentUpon>IdentificazioneTossine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentificazioneTossine\IdentificazioneTossine.aspx.designer.cs">
+      <DependentUpon>IdentificazioneTossine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificazioneTossine\NewIdentificazioneTossine.aspx.cs">
+      <DependentUpon>NewIdentificazioneTossine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdentificazioneTossine\NewIdentificazioneTossine.aspx.designer.cs">
+      <DependentUpon>NewIdentificazioneTossine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informatica\Criptazione.ascx.cs">
+      <DependentUpon>Criptazione.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informatica\Criptazione.ascx.designer.cs">
+      <DependentUpon>Criptazione.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Informatica\Decriptazione.ascx.cs">
+      <DependentUpon>Decriptazione.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informatica\Decriptazione.ascx.designer.cs">
+      <DependentUpon>Decriptazione.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Informatica\Informatica.aspx.cs">
+      <DependentUpon>Informatica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informatica\Informatica.aspx.designer.cs">
+      <DependentUpon>Informatica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informatica\Pubblicazione.ascx.cs">
+      <DependentUpon>Pubblicazione.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informatica\Pubblicazione.ascx.designer.cs">
+      <DependentUpon>Pubblicazione.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratorioBiochimico\LaboratorioBiochimico.aspx.cs">
+      <DependentUpon>LaboratorioBiochimico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratorioBiochimico\LaboratorioBiochimico.aspx.designer.cs">
+      <DependentUpon>LaboratorioBiochimico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratorioBiochimico\NewLaboratorioBiochimico.aspx.cs">
+      <DependentUpon>NewLaboratorioBiochimico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratorioBiochimico\NewLaboratorioBiochimico.aspx.designer.cs">
+      <DependentUpon>NewLaboratorioBiochimico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratorioChimico\LaboratorioChimico.aspx.cs">
+      <DependentUpon>LaboratorioChimico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratorioChimico\LaboratorioChimico.aspx.designer.cs">
+      <DependentUpon>LaboratorioChimico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratorioChimico\NewLaboratorioChimico.aspx.cs">
+      <DependentUpon>NewLaboratorioChimico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratorioChimico\NewLaboratorioChimico.aspx.designer.cs">
+      <DependentUpon>NewLaboratorioChimico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratorioTecnico\CreazioneOggetti.aspx.cs">
+      <DependentUpon>CreazioneOggetti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratorioTecnico\CreazioneOggetti.aspx.designer.cs">
+      <DependentUpon>CreazioneOggetti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratorioTecnico\NewCreazioneOggetti.aspx.cs">
+      <DependentUpon>NewCreazioneOggetti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratorioTecnico\NewCreazioneOggetti.aspx.designer.cs">
+      <DependentUpon>NewCreazioneOggetti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\EndSession.aspx.cs">
+      <DependentUpon>EndSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\EndSession.aspx.designer.cs">
+      <DependentUpon>EndSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginFPI.aspx.cs">
+      <DependentUpon>LoginFPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginFPI.aspx.designer.cs">
+      <DependentUpon>LoginFPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginHolonet.aspx.cs">
+      <DependentUpon>LoginHolonet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginHolonet.aspx.designer.cs">
+      <DependentUpon>LoginHolonet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginImpero.aspx.cs">
+      <DependentUpon>LoginImpero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginImpero.aspx.designer.cs">
+      <DependentUpon>LoginImpero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginRepubblica.aspx.cs">
+      <DependentUpon>LoginRepubblica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginRepubblica.aspx.designer.cs">
+      <DependentUpon>LoginRepubblica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginUserControl.ascx.cs">
+      <DependentUpon>LoginUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\LoginUserControl.ascx.designer.cs">
+      <DependentUpon>LoginUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login\NewLogin.aspx.cs">
+      <DependentUpon>NewLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\NewLogin.aspx.designer.cs">
+      <DependentUpon>NewLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\QRLoginUserControl.ascx.cs">
+      <DependentUpon>QRLoginUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\QRLoginUserControl.ascx.designer.cs">
+      <DependentUpon>QRLoginUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\IMessaggi.cs" />
+    <Compile Include="Messaggi\Messaggi.aspx.cs">
+      <DependentUpon>Messaggi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\Messaggi.aspx.designer.cs">
+      <DependentUpon>Messaggi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\MessaggiInviati.ascx.cs">
+      <DependentUpon>MessaggiInviati.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\MessaggiInviati.ascx.designer.cs">
+      <DependentUpon>MessaggiInviati.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\MessaggiRicevuti.ascx.cs">
+      <DependentUpon>MessaggiRicevuti.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\MessaggiRicevuti.ascx.designer.cs">
+      <DependentUpon>MessaggiRicevuti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\NewMessaggi.aspx.cs">
+      <DependentUpon>NewMessaggi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\NewMessaggi.aspx.designer.cs">
+      <DependentUpon>NewMessaggi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\NewRubrica.aspx.cs">
+      <DependentUpon>NewRubrica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\NewRubrica.aspx.designer.cs">
+      <DependentUpon>NewRubrica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\Rubrica.aspx.cs">
+      <DependentUpon>Rubrica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\Rubrica.aspx.designer.cs">
+      <DependentUpon>Rubrica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\SingleMessageControl.ascx.cs">
+      <DependentUpon>SingleMessageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\SingleMessageControl.ascx.designer.cs">
+      <DependentUpon>SingleMessageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Messaggi\SingleSentMessageControl.ascx.cs">
+      <DependentUpon>SingleSentMessageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messaggi\SingleSentMessageControl.ascx.designer.cs">
+      <DependentUpon>SingleSentMessageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile.Master.cs">
+      <DependentUpon>Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile.Master.designer.cs">
+      <DependentUpon>Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Notizie\Notizie.aspx.cs">
+      <DependentUpon>Notizie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notizie\Notizie.aspx.designer.cs">
+      <DependentUpon>Notizie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCodeReader\QrCodeReader.ascx.cs">
+      <DependentUpon>QrCodeReader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QRCodeReader\QrCodeReader.ascx.designer.cs">
+      <DependentUpon>QrCodeReader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SelezioneRete.aspx.cs">
+      <DependentUpon>SelezioneRete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelezioneRete.aspx.designer.cs">
+      <DependentUpon>SelezioneRete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Encryption.cs" />
+    <Compile Include="Utilities\ICryptable.cs" />
+    <Compile Include="Utilities\IHackablePage.cs" />
+    <Compile Include="Utilities\HackingEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ForQuests\Videos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonBusiness\CommonBusiness.csproj">
+      <Project>{FC5DB41B-7103-4C93-90EA-C11FB3826CAE}</Project>
+      <Name>CommonBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{903EA968-B566-4206-8A5F-77C58A54CCD5}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HolonetControls\HolonetWebControls.csproj">
+      <Project>{8B2786BC-371C-4D6D-B0CF-6AA50493D6BD}</Project>
+      <Name>HolonetWebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mobile.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddOn\QRCodeReader\src\.DS_Store" />
+    <None Include="AddOn\QRCodeReader\src\com\.DS_Store" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\.DS_Store" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\event\QRdecoderEvent.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\event\QRreaderEvent.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\LabelingClass.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\QRcode\G4Num.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\QRcode\G8Num.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\QRcode\GetQRimage.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\QRcode\GFstatic.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\QRcode\QRCodeDetecter.as" />
+    <None Include="AddOn\QRCodeReader\src\com\logosware\utils\QRcode\QRdecode.as" />
+    <None Include="AddOn\QRCodeReader\src\fr\.DS_Store" />
+    <None Include="AddOn\QRCodeReader\src\fr\marcbuils\.DS_Store" />
+    <None Include="AddOn\QRCodeReader\src\fr\marcbuils\WebcamQRCode\WebcamQRCode.as" />
+    <None Include="AddOn\QRCodeReader\swf\.DS_Store" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64521</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Holonet3Development</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

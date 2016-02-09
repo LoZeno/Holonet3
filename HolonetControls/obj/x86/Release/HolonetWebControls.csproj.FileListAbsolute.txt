@@ -1,0 +1,9 @@
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\bin\x86\Release\x64\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\bin\x86\Release\x86\SQLite.Interop.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\bin\x86\Release\HolonetControls.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\bin\x86\Release\HolonetControls.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\bin\x86\Release\DataAccessLayer.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\bin\x86\Release\DataAccessLayer.pdb
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\obj\x86\Release\HolonetWebControls.csprojResolveAssemblyReference.cache
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\obj\x86\Release\HolonetControls.dll
+D:\SVILUPPO SOFTWARE\Holonet3\trunk\HolonetControls\obj\x86\Release\HolonetControls.pdb

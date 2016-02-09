@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mobile.master.cs" Inherits="Holonet3.Mobile" %>
+
+<!DOCTYPE html />
+<html>
+<head runat="server">
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title></title>
+    <%--Uso gli stessi ID per i ContentPlaceHolder che ci sono in Site.Master--%>
+    <%--<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <%--Uso gli stessi ID per i ContentPlaceHolder che ci sono in Site.Master--%>
+        <%--<asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+        IN COSTRUZIONE (mi spiace, pazientate)
+    </div>
+    </form>
+</body>
+</html>
